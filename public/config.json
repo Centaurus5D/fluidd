@@ -3,8 +3,7 @@
     "fluidd.xyz",
     "fluidd.net"
   ],
-  "endpoints": [
-  ],
+  "endpoints": [],
   "hosted": false,
   "themePresets": [
     {
@@ -195,6 +194,14 @@
       "isDark": true,
       "logo": {
         "src": "logo_salad_fork.svg"
+      }
+    },
+    {
+      "name": "STEAPP",
+      "color": "#0277bd",
+      "isDark": false,
+      "logo": {
+        "src": "logo_steapp.svg"
       }
     }
   ]
