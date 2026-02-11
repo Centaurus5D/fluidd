@@ -18,18 +18,36 @@
         {{ $t("app.general.btn.calibrate") }}
       </app-btn>
 
-      <app-btn v-if="!fullscreen" icon @click="$filters.routeTo({ name: 'tune' })">
-        <v-icon dense> $fullScreen </v-icon>
+      <app-btn
+        v-if="!fullscreen"
+        icon
+        @click="$filters.routeTo({ name: 'tune' })"
+      >
+        <v-icon dense>
+          $fullScreen
+        </v-icon>
       </app-btn>
     </template>
 
     <v-card-text>
       <v-row>
-        <v-col cols="12" sm="6">
-          <wcs-chart ref="chart" :hovered="hoveredOffset" />
+        <v-col
+          cols="12"
+          sm="6"
+        >
+          <wcs-chart
+            ref="chart"
+            :hovered="hoveredOffset"
+          />
         </v-col>
-        <v-col cols="12" sm="6">
-          <wcs-input @focus="onFocus" @blur="onBlur" />
+        <v-col
+          cols="12"
+          sm="6"
+        >
+          <wcs-input
+            @focus="onFocus"
+            @blur="onBlur"
+          />
         </v-col>
       </v-row>
     </v-card-text>
@@ -42,13 +60,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Mixins, Prop, Ref } from "vue-property-decorator";
-import WcsChart from "./WcsChart.vue";
-import WcsInput from "./WcsInput.vue";
-import StateMixin from "@/mixins/state";
-import ToolheadMixin from "@/mixins/toolhead";
-import BrowserMixin from "@/mixins/browser";
-import ToolCalibrateDialog from "./ToolCalibrateDialog.vue";
+import { Component, Mixins, Prop, Ref } from 'vue-property-decorator'
+import WcsChart from './WcsChart.vue'
+import WcsInput from './WcsInput.vue'
+import StateMixin from '@/mixins/state'
+import ToolheadMixin from '@/mixins/toolhead'
+import BrowserMixin from '@/mixins/browser'
+import ToolCalibrateDialog from './ToolCalibrateDialog.vue'
 
 @Component({
   components: {
@@ -59,30 +77,30 @@ import ToolCalibrateDialog from "./ToolCalibrateDialog.vue";
 })
 export default class WcsCard extends Mixins(StateMixin, ToolheadMixin, BrowserMixin) {
   @Prop({ type: Boolean })
-  readonly fullscreen?: boolean;
+  readonly fullscreen?: boolean
 
-  @Ref("chart")
-  readonly wcsChart!: WcsChart;
+  @Ref('chart')
+  readonly wcsChart!: WcsChart
 
-  calibrate(radius: number) {
-    this.sendGcode(`TOOL_CALIBRATE TOOL_RADIUS=${radius}`, this.$waits.onToolCalibrate);
+  calibrate (radius: number) {
+    this.sendGcode(`TOOL_CALIBRATE TOOL_RADIUS=${radius}`, this.$waits.onToolCalibrate)
   }
 
-  toolCalibrateDialogOpen = false;
+  toolCalibrateDialogOpen = false
 
   hoveredOffset: { wcs: number; axis: number } = {
     wcs: -1,
     axis: -1,
-  };
-
-  onFocus(wcs: number, axis: number) {
-    this.hoveredOffset.wcs = wcs;
-    this.hoveredOffset.axis = axis;
   }
 
-  onBlur() {
-    this.hoveredOffset.wcs = -1;
-    this.hoveredOffset.axis = -1;
+  onFocus (wcs: number, axis: number) {
+    this.hoveredOffset.wcs = wcs
+    this.hoveredOffset.axis = axis
+  }
+
+  onBlur () {
+    this.hoveredOffset.wcs = -1
+    this.hoveredOffset.axis = -1
   }
 }
 </script>

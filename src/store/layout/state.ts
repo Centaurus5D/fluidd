@@ -1,6 +1,6 @@
-import type { LayoutState } from "./types";
-import { v4 as uuidv4 } from "uuid";
-import type { DiagnosticsCardContainer } from "@/store/diagnostics/types";
+import type { LayoutState } from './types'
+import { v4 as uuidv4 } from 'uuid'
+import type { DiagnosticsCardContainer } from '@/store/diagnostics/types'
 
 /**
  * Maintains the state of our page layouts.
@@ -14,31 +14,31 @@ export const defaultState = (): LayoutState => {
     layouts: {
       dashboard: {
         container1: [
-          { id: "printer-status-card", enabled: true, collapsed: false },
-          { id: "spoolman-card", enabled: true, collapsed: false },
-          { id: "mmu-card", enabled: true, collapsed: false },
-          { id: "camera-card", enabled: true, collapsed: false },
-          { id: "toolhead-card", enabled: true, collapsed: false },
-          { id: "module-5d-card", enabled: true, collapsed: false },
+          { id: 'printer-status-card', enabled: true, collapsed: false },
+          { id: 'spoolman-card', enabled: true, collapsed: false },
+          { id: 'mmu-card', enabled: true, collapsed: false },
+          { id: 'camera-card', enabled: true, collapsed: false },
+          { id: 'toolhead-card', enabled: true, collapsed: false },
+          { id: 'module-5d-card', enabled: true, collapsed: false },
 
-          { id: "macros-card", enabled: true, collapsed: false },
-          { id: "outputs-card", enabled: true, collapsed: false },
-          { id: "runout-sensors-card", enabled: false, collapsed: false },
-          { id: "printer-limits-card", enabled: true, collapsed: false },
-          { id: "retract-card", enabled: true, collapsed: false },
+          { id: 'macros-card', enabled: true, collapsed: false },
+          { id: 'outputs-card', enabled: true, collapsed: false },
+          { id: 'runout-sensors-card', enabled: false, collapsed: false },
+          { id: 'printer-limits-card', enabled: true, collapsed: false },
+          { id: 'retract-card', enabled: true, collapsed: false },
         ],
         container2: [
-          { id: "temperature-card", enabled: true, collapsed: false },
-          { id: "sensors-card", enabled: true, collapsed: false },
-          { id: "console-card", enabled: true, collapsed: false },
-          { id: "jobs-card", enabled: true, collapsed: false },
-          { id: "job-queue-card", enabled: false, collapsed: false },
-          { id: "gcode-preview-card", enabled: true, collapsed: false },
-          { id: "bed-mesh-card", enabled: false, collapsed: false },
-          { id: "wcs-card", enabled: false, collapsed: false },
-          { id: "probe-card", enabled: false, collapsed: false },
-          { id: "beacon-card", enabled: false, collapsed: false },
-          { id: "afc-card", enabled: true, collapsed: false },
+          { id: 'temperature-card', enabled: true, collapsed: false },
+          { id: 'sensors-card', enabled: true, collapsed: false },
+          { id: 'console-card', enabled: true, collapsed: false },
+          { id: 'jobs-card', enabled: true, collapsed: false },
+          { id: 'job-queue-card', enabled: false, collapsed: false },
+          { id: 'gcode-preview-card', enabled: true, collapsed: false },
+          { id: 'bed-mesh-card', enabled: false, collapsed: false },
+          { id: 'wcs-card', enabled: false, collapsed: false },
+          { id: 'probe-card', enabled: false, collapsed: false },
+          { id: 'beacon-card', enabled: false, collapsed: false },
+          { id: 'afc-card', enabled: true, collapsed: false },
         ],
       },
       diagnostics: {
@@ -46,33 +46,33 @@ export const defaultState = (): LayoutState => {
           {
             id: uuidv4(),
             enabled: true,
-            title: "Speeds",
+            title: 'Speeds',
             collapsed: false,
             height: 300,
-            icon: "motion",
+            icon: 'motion',
             axes: [
               {
                 enabled: true,
-                unit: "mm/s",
+                unit: 'mm/s',
                 showLegend: true,
                 metrics: [
                   {
-                    collector: "printer.motion_report.live_velocity",
-                    name: "Velocity",
+                    collector: 'printer.motion_report.live_velocity',
+                    name: 'Velocity',
                     style: {
-                      lineStyle: "solid",
-                      lineColor: "#2196f3",
+                      lineStyle: 'solid',
+                      lineColor: '#2196f3',
                       fillColor: null,
                       fillOpacity: 0,
                       displayLegend: true,
                     },
                   },
                   {
-                    collector: "printer.toolhead.max_velocity",
-                    name: "Max Velocity",
+                    collector: 'printer.toolhead.max_velocity',
+                    name: 'Max Velocity',
                     style: {
-                      lineStyle: "dotted",
-                      lineColor: "#0075d2",
+                      lineStyle: 'dotted',
+                      lineColor: '#0075d2',
                       fillColor: null,
                       fillOpacity: 0,
                       displayLegend: false,
@@ -82,29 +82,29 @@ export const defaultState = (): LayoutState => {
               },
               {
                 enabled: true,
-                unit: "mm³/s",
+                unit: 'mm³/s',
                 showLegend: true,
                 max: 20,
                 metrics: [
                   {
                     collector:
-                      "printer.motion_report.live_extruder_velocity * Math.PI * " +
-                      "(printer.configfile.settings.extruder.filament_diameter / 2) ** 2",
-                    name: "Flow",
+                      'printer.motion_report.live_extruder_velocity * Math.PI * ' +
+                      '(printer.configfile.settings.extruder.filament_diameter / 2) ** 2',
+                    name: 'Flow',
                     style: {
-                      lineStyle: "solid",
-                      lineColor: "#b12f36",
+                      lineStyle: 'solid',
+                      lineColor: '#b12f36',
                       fillColor: null,
                       fillOpacity: 5,
                       displayLegend: true,
                     },
                   },
                   {
-                    collector: "12",
-                    name: "Max Flow",
+                    collector: '12',
+                    name: 'Max Flow',
                     style: {
-                      lineStyle: "dashed",
-                      lineColor: "#820007",
+                      lineStyle: 'dashed',
+                      lineColor: '#820007',
                       fillColor: null,
                       fillOpacity: 0,
                       displayLegend: false,
@@ -117,7 +117,7 @@ export const defaultState = (): LayoutState => {
         ],
       } as DiagnosticsCardContainer,
     },
-  };
-};
+  }
+}
 
-export const state = defaultState();
+export const state = defaultState()

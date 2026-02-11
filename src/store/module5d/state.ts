@@ -1,7 +1,7 @@
-import type { Module5dState } from "./types";
+import type { Module5dState } from './types'
 
 export const defaultState = (): Module5dState => {
-  return {};
-};
+  return {}
+}
 
-export const state = defaultState();
+export const state = defaultState()

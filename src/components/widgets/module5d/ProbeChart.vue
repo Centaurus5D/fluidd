@@ -1224,10 +1224,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Mixins } from "vue-property-decorator";
-import BrowserMixin from "@/mixins/browser";
+import { Component, Prop, Mixins } from 'vue-property-decorator'
+import BrowserMixin from '@/mixins/browser'
 
-type GraphVariant = "MM" | "PM" | "MP" | "PP";
+type GraphVariant = 'MM' | 'PM' | 'MP' | 'PP'
 
 @Component({})
 export default class ProbeChart extends Mixins(BrowserMixin) {
@@ -1235,29 +1235,29 @@ export default class ProbeChart extends Mixins(BrowserMixin) {
     type: Number,
     default: -1,
   })
-  readonly hovered!: number;
+  readonly hovered!: number
 
-  get primaryColor(): string {
-    return this.$vuetify.theme.currentTheme.primary?.toString() ?? "";
+  get primaryColor (): string {
+    return this.$vuetify.theme.currentTheme.primary?.toString() ?? ''
   }
 
-  get graphVariant() {
-    const res: string[] = [];
-    res.push(this.probeOffsets[0] < 0 ? "M" : "P");
-    res.push(this.probeOffsets[1] < 0 ? "M" : "P");
-    return res.join("") as GraphVariant;
+  get graphVariant () {
+    const res: string[] = []
+    res.push(this.probeOffsets[0] < 0 ? 'M' : 'P')
+    res.push(this.probeOffsets[1] < 0 ? 'M' : 'P')
+    return res.join('') as GraphVariant
   }
 
-  get probeOffsets() {
-    return this.$typedState.printer.printer.module_5d_probe?.offsets ?? [0, 0, 0];
+  get probeOffsets () {
+    return this.$typedState.printer.printer.module_5d_probe?.offsets ?? [0, 0, 0]
   }
 
-  get strokeColor() {
-    return this.$typedState.config.uiSettings.theme.isDark ? "#ffffff" : "#000000";
+  get strokeColor () {
+    return this.$typedState.config.uiSettings.theme.isDark ? '#ffffff' : '#000000'
   }
 
-  get fillColor() {
-    return this.$typedState.config.uiSettings.theme.isDark ? "#1E1E1E" : "#ffffff";
+  get fillColor () {
+    return this.$typedState.config.uiSettings.theme.isDark ? '#1E1E1E' : '#ffffff'
   }
 }
 </script>
