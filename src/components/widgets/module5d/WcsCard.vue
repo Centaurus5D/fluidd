@@ -13,7 +13,7 @@
         class="me-1 my-1"
         :loading="hasWait($waits.onMeshCalibrate)"
         :disabled="printerBusy || !allHomed"
-        @click="calibrate()"
+        @click="() => (toolCalibrateDialogOpen = true)"
       >
         {{ $t("app.general.btn.calibrate") }}
       </app-btn>
@@ -33,6 +33,11 @@
         </v-col>
       </v-row>
     </v-card-text>
+    <tool-calibrate-dialog
+      v-if="toolCalibrateDialogOpen"
+      v-model="toolCalibrateDialogOpen"
+      @save="calibrate"
+    />
   </collapsable-card>
 </template>
 
@@ -43,11 +48,13 @@ import WcsInput from "./WcsInput.vue";
 import StateMixin from "@/mixins/state";
 import ToolheadMixin from "@/mixins/toolhead";
 import BrowserMixin from "@/mixins/browser";
+import ToolCalibrateDialog from "./ToolCalibrateDialog.vue";
 
 @Component({
   components: {
     WcsChart,
     WcsInput,
+    ToolCalibrateDialog,
   },
 })
 export default class WcsCard extends Mixins(StateMixin, ToolheadMixin, BrowserMixin) {
@@ -57,9 +64,11 @@ export default class WcsCard extends Mixins(StateMixin, ToolheadMixin, BrowserMi
   @Ref("chart")
   readonly wcsChart!: WcsChart;
 
-  calibrate() {
-    this.sendGcode("BED_MESH_CALIBRATE", this.$waits.onMeshCalibrate);
+  calibrate(radius: number) {
+    this.sendGcode(`TOOL_CALIBRATE TOOL_RADIUS=${radius}`, this.$waits.onMeshCalibrate);
   }
+
+  toolCalibrateDialogOpen = false;
 
   hoveredOffset: { wcs: number; axis: number } = {
     wcs: -1,

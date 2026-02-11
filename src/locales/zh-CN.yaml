@@ -1068,3 +1068,7 @@ app:
     tooltip:
       restore_backup: 恢复备份
       delete_backup: 删除备份
+  module_5d:
+    label:
+      tool_radius: 刀具半径
+      tool_calibrate: 校准新的 WCS

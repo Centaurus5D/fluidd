@@ -1242,3 +1242,7 @@ app:
       show_ttg_map: TTG வரைபடத்தைக் காட்டு
       show_logos: லோகோக்களைக் காட்டு
       show_unavailable_spool_color: கிடைக்காத ச்பூல்களைக் காட்டு
+  module_5d:
+    label:
+      tool_radius: கருவி ஆரம்
+      tool_calibrate: புதிய WCS அளவீடு

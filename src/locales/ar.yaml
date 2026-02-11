@@ -425,3 +425,7 @@ app:
       invalid: indicates local changes to the repo
       packages: الحزم
       release_notes: ملاحظات الاصدارة
+  module_5d:
+    label:
+      tool_radius: شعاع الأداة
+      tool_calibrate: معايرة WCS الجديدة

@@ -756,3 +756,7 @@ app:
       variable_fps: Veranderlike FPS
       variable_fps_min: Minimum Raamtempo
       variable_fps_max: Maksimum Raamtempo
+  module_5d:
+    label:
+      tool_radius: Gereedskap radius
+      tool_calibrate: Kalibreer nuwe WCS

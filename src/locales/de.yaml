@@ -1252,3 +1252,7 @@ app:
       large_filament_status: Großer Filamentstatus
       show_ttg_map: TTG-Zuordnung anzeigen
       show_unavailable_spool_color: Nicht verfügbare Spulen anzeigen
+  module_5d:
+    label:
+      tool_radius: Werkzeugradius
+      tool_calibrate: Neues WCS kalibrieren

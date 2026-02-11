@@ -1240,3 +1240,7 @@ app:
       not_found: Nie znaleziono istniejących kopii zapasowych bazy danych.
   afc:
     AfcSettings: Ustawienia AFC
+  module_5d:
+    label:
+      tool_radius: Promień narzędzia
+      tool_calibrate: Skalibruj nowy WCS

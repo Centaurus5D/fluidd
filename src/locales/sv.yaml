@@ -19,3 +19,7 @@ app:
       module5d: 5D-modul
     label:
       a_offset: En axelförskjutning A
+  module_5d:
+    label:
+      tool_radius: Verktygsradie
+      tool_calibrate: Kalibrera nya WCS

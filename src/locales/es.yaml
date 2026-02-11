@@ -604,3 +604,7 @@ app:
       invalid: indica cambios locales a la repo
       packages: Paquetes
       release_notes: Notas de lanzamiento
+  module_5d:
+    label:
+      tool_radius: Radio de herramienta
+      tool_calibrate: Calibrar nuevo WCS

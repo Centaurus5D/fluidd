@@ -1302,3 +1302,7 @@ app:
     tooltip:
       restore_backup: Restore Backup
       delete_backup: Delete Backup
+  module_5d:
+    label:
+      tool_radius: Tool radius
+      tool_calibrate: Calibrate new WCS

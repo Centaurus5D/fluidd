@@ -1033,3 +1033,7 @@ app:
     tooltip:
       delete: Удалить профиль
       load: Загрузить профиль
+  module_5d:
+    label:
+      tool_radius: Радиус оснастки
+      tool_calibrate: Калибровка новой WCS

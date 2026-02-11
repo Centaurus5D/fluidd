@@ -1085,3 +1085,7 @@ app:
       mmu_maintenance: MMU Karbantartás
       recover_state: MMU állapot javítása
       edit_gate_map: Filamentek szerkesztése
+  module_5d:
+    label:
+      tool_radius: Szerszám sugara
+      tool_calibrate: Kalibrálja az új WCS-t

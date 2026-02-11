@@ -1202,3 +1202,7 @@ app:
       show_logos: Logoları Göster
       show_clog_detection: Tıkanıklık Tespitini Göster
       show_unavailable_spool_color: Kullanılamayan Makaraları Göster
+  module_5d:
+    label:
+      tool_radius: Takım yarıçapı
+      tool_calibrate: Yeni WCS'yi kalibre edin

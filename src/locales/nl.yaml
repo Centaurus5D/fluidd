@@ -942,3 +942,7 @@ app:
       show_details: Toon Filament Details
       show_logos: Toon Logos
       show_unavailable_spool_color: Toon Onbeschikbare Spoelen
+  module_5d:
+    label:
+      tool_radius: Gereedschapsradius
+      tool_calibrate: Kalibreer nieuwe WCS

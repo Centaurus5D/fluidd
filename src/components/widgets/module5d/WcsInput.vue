@@ -5,7 +5,7 @@
         <app-text-field
           :color="'primary'"
           :label="$t(`app.general.label.a_offset`)"
-          :rules="[$rules.required, $rules.numberValid]"
+          :rules="[$rules.required, $rules.numberValid, $rules.numberLessThanOrEqual(0)]"
           outlined
           persistent-placeholder
           hide-details

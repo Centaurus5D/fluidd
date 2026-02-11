@@ -440,3 +440,7 @@ app:
       invalid: naznačuje lokální změny v repositáři
       packages: Balíčky
       release_notes: Poznámky k vydání
+  module_5d:
+    label:
+      tool_radius: Rádius nástroje
+      tool_calibrate: Kalibrujte nové WCS

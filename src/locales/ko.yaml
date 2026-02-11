@@ -823,3 +823,7 @@ app:
   sensors:
     title:
       sensors: 센서
+  module_5d:
+    label:
+      tool_radius: 공구 반경
+      tool_calibrate: 새로운 WCS 보정

@@ -704,3 +704,7 @@ app:
   beacon:
     label:
       active: ativo
+  module_5d:
+    label:
+      tool_radius: Raio da ferramenta
+      tool_calibrate: Calibrar novo WCS

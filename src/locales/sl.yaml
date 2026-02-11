@@ -1232,3 +1232,7 @@ app:
     tooltip:
       restore_backup: Obnovi varnostno kopijo
       delete_backup: Izbriši varnostno kopijo
+  module_5d:
+    label:
+      tool_radius: Polmer orodja
+      tool_calibrate: Umerite nov WCS

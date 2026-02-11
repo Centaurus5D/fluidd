@@ -1045,3 +1045,7 @@ app:
     MaterialSubtitle: Par exemple ABS PETG PLA etc.
     Moving: Mouvement
     ParkNozzle: Ranger Buse
+  module_5d:
+    label:
+      tool_radius: Rayon d'outil
+      tool_calibrate: Calibrer le nouveau WCS

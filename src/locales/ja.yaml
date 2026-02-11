@@ -1139,3 +1139,7 @@ app:
       delete_backup: バックアップを削除
     msg:
       not_found: データベースの既存のバックアップが見つかりません。
+  module_5d:
+    label:
+      tool_radius: 工具半径
+      tool_calibrate: 新しい WCS を校正する

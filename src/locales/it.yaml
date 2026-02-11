@@ -478,3 +478,7 @@ app:
       invalid: indica modifiche locali alla repo
       packages: Pacchetti
       release_notes: Note di Rilascio
+  module_5d:
+    label:
+      tool_radius: Raggio dell'utensile
+      tool_calibrate: Calibrare il nuovo WCS

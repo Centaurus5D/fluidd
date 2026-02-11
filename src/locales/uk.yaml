@@ -1335,3 +1335,7 @@ app:
     Unknown: Невідомо
     Weight: Вага
     WeightSubtitle: Вага нитки в грамах (без котушки).
+  module_5d:
+    label:
+      tool_radius: Радіус інструменту
+      tool_calibrate: Відкалібруйте новий WCS
