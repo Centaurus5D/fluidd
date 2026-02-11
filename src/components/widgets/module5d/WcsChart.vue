@@ -1,13 +1,10 @@
 <template>
-  <div
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    style="background: transparent; background-color: transparent; color-scheme: light"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    version="1.1"
+  <div>
+  <svg
     width="100%"
     height="100%"
     viewBox="0 0 1098 1133"
+    style="background: transparent; background-color: transparent; color-scheme: light"
   >
     <defs />
     <g>
