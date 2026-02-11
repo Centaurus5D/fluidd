@@ -138,6 +138,10 @@ export default class Dashboard extends Mixins(StateMixin) {
     return this.$typedGetters["mesh/getSupportsBedMesh"];
   }
 
+  get supports5dModule(): boolean {
+    return this.$typedGetters["module5d/getSupports5dModule"];
+  }
+
   get supportsBeacon(): boolean {
     return this.$typedGetters["printer/getSupportsBeacon"];
   }
@@ -234,6 +238,7 @@ export default class Dashboard extends Mixins(StateMixin) {
     if (item.id === "sensors-card" && !this.hasSensors) return true;
     if (item.id === "temperature-card" && !this.hasHeatersOrTemperatureSensors) return true;
     if (item.id === "afc-card" && !this.supportsAfc) return true;
+    if (item.id === "module-5d-card" && !this.supports5dModule) return true;
 
     // Otherwise return the opposite of whatever the enabled state is.
     return !item.enabled;
