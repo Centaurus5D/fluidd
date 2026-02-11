@@ -15,10 +15,10 @@
 
     <v-card-text>
       <v-row>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="4">
           <probe-chart ref="chart" :hovered="hoveredOffset" />
         </v-col>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="8">
           <probe-input @focus="onFocus" @blur="onBlur" />
         </v-col>
       </v-row>
