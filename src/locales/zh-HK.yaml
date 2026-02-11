@@ -7,11 +7,11 @@ app:
       mesh_matrix: 網格矩陣
       probed_matrix: 探測點矩陣
       profile_name: 配置文件
-      remove_profile: '删除 %{name} 配置文件'
+      remove_profile: 删除 %{name} 配置文件
       scale: 顯示偏差值
       wireframe: 顯示網格線
     msg:
-      hint: '如果將 %{name} 另存, 你也可以選擇刪除此 %{name} 配置'
+      hint: 如果將 %{name} 另存, 你也可以選擇刪除此 %{name} 配置
       not_found: 熱床網格配置不存在。
       not_loaded: 熱床網格配置不存在
     tooltip:
@@ -38,14 +38,16 @@ app:
       cant_connect: 出了點問題，Fluidd 無法連接目標。你確定這是正確的設備地址？
       cors_error: 被 CORS 政策阻止，請查看 Moonraker 幫助
       cors_note: >-
-        這可能意味著您需要修改 Moonraker 配置。請參閱有關多打印機設置的<a href="%{url}" target="_blank">文檔</a>
+        這可能意味著您需要修改 Moonraker 配置。請參閱有關多打印機設置的<a href="%{url}"
+        target="_blank">文檔</a>
     hint:
-      add_printer: '例如：http://fluidd.local'
+      add_printer: 例如：http://fluidd.local
     msg:
-      trouble: '遇到麻煩？<a href="%{url}" target="_blank">點擊此處</a> 查看更多信息。'
+      trouble: 遇到麻煩？<a href="%{url}" target="_blank">點擊此處</a> 查看更多信息。
     tooltip:
       endpoint_examples: >-
-        輸入您的 Moonraker API 地址。<br />例如：<br/><blockquote>fluidd.local, https://192.168.1.150</blockquote>
+        輸入您的 Moonraker API 地址。<br />例如：<br/><blockquote>fluidd.local,
+        https://192.168.1.150</blockquote>
   endstop:
     states:
       label:
@@ -86,7 +88,7 @@ app:
       root_disabled: '{root} G代碼文件目錄不可用，請檢查您的日誌。'
     url:
       klipper_config: '%{klipperDomain}/zh-Hant/Config_Reference.html#%{hash}'
-      moonraker_config: 'https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}'
+      moonraker_config: https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}
       moonraker_telegram_bot_config: >-
         https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}
   gcode:
@@ -108,7 +110,7 @@ app:
       show_retractions: 顯示回抽
       parsing_file: 解析文件
     msg:
-      confirm: '文件 "%{filename}" 大小為 %{size}，這可能會導致系統短暫失去響應，是否確認？'
+      confirm: 文件 "%{filename}" 大小為 %{size}，這可能會導致系統短暫失去響應，是否確認？
   general:
     btn:
       abort: 中止
@@ -159,7 +161,7 @@ app:
       reset_layout: 重置布局
       reset_default_layout: 重置預設佈局
       restart_firmware: 重啟Firmware
-      restart_service: '重啟 %{service}'
+      restart_service: 重啟 %{service}
       restart_service_klipper: 重啟Klipper
       restart_service_moonraker: 重啟Moonraker
       resume: 恢覆
@@ -183,9 +185,9 @@ app:
       view: 查看
       reset_stats: 重置統計信息
     error:
-      app_setup_link: '如需查看 Fluidd 詳細配置規則，請點擊<a target="_blank" href="%{url}">此處</a>。'
-      app_warnings_found: '％{appName} 出現警告。'
-      components_config: '如需查看 Moonraker 詳細配置規則，請點擊<a target="_blank" href="%{url}">此處</a>。'
+      app_setup_link: 如需查看 Fluidd 詳細配置規則，請點擊<a target="_blank" href="%{url}">此處</a>。
+      app_warnings_found: ％{appName} 出現警告。
+      components_config: 如需查看 Moonraker 詳細配置規則，請點擊<a target="_blank" href="%{url}">此處</a>。
       failed_components: Moonraker 插件啟用失敗，請檢查您的日誌，更新您的配置並重新啟動 Moonraker。
     label:
       accel_to_decel: 加速到減速度
@@ -230,7 +232,7 @@ app:
       longest_job: 單次耗時最長
       low: 最低溫度
       manage_accounts: 賬戶管理
-      user_managed_source: '由 %{source} 身份驗證管理的用戶'
+      user_managed_source: 由 %{source} 身份驗證管理的用戶
       m117: M117
       moonraker: Moonraker
       name: 名稱
@@ -254,7 +256,7 @@ app:
       save_as: 另存為
       screw_index: 螺絲索引
       screw_name: 螺絲名稱
-      screw_number: '螺絲 %{index}'
+      screw_number: 螺絲 %{index}
       services: 服務
       slicer: 切片剩余
       smooth_time: 平滑時間
@@ -271,8 +273,8 @@ app:
       total_print_time_avg: 平均打印時間
       total_time: 總時間
       total_time_avg: 平均時間
-      turn_device_on: '開啟 %{device}'
-      turn_device_off: '關閉 %{device}'
+      turn_device_on: 開啟 %{device}
+      turn_device_off: 關閉 %{device}
       uncategorized: 未分類
       unretract_extra_length: 回抽額外裝填量
       unretract_speed: 回抽裝填速度
@@ -289,6 +291,7 @@ app:
       edit_category: 編輯分類
       add_category: 添加分類
       file_time: 預計剩余
+      a_offset: 軸偏移 A
     msg:
       password_changed: 密碼已更改
       wrong_password: 出現不明錯誤。您確定輸入正確密碼嗎？
@@ -297,7 +300,7 @@ app:
       offline_ready: Fluidd 現在可以離線工作了。
       needs_refresh: 有新內容可用，請單擊 <b>重新加載</b> 按鈕進行更新。
       pending_configuration_sections_deleted: 以下部分已標記為刪除
-      rolledover_logs: '以下應用程序日誌已更新：%{applications}'
+      rolledover_logs: 以下應用程序日誌已更新：%{applications}
     simple_form:
       error:
         arrayofnums: 僅允許輸入數字
@@ -306,9 +309,9 @@ app:
         invalid_number: 無效數字
         invalid_url: 無效的URL地址
         invalid_expression: 無效表達
-        max: '最大 %{max}'
-        min: '長度最小%{min}位'
-        min_or_0: '最小 %{min} 或 0'
+        max: 最大 %{max}
+        min: 長度最小%{min}位
+        min_or_0: 最小 %{min} 或 0
         password_username: 用戶名密碼不匹配
         required: 必填
         invalid_aspect: 寬高比無效
@@ -318,12 +321,12 @@ app:
         confirm_forcemove_toggle: 確認繼續？這可能會損壞打印機。
         confirm_reboot_host: 確認繼續？這會重啟您的系統。
         confirm_shutdown_host: 確認繼續？這會關閉您的系統。
-        confirm_service_start: '您確定要啟動 %{name} 服務嗎？'
-        confirm_service_restart: '你確定要重啟 %{name} 服務嗎?'
-        confirm_service_stop: '你確定要停止 %{name} 服務嗎?'
+        confirm_service_start: 您確定要啟動 %{name} 服務嗎？
+        confirm_service_restart: 你確定要重啟 %{name} 服務嗎?
+        confirm_service_stop: 你確定要停止 %{name} 服務嗎?
         confirm_power_device_toggle: 確認繼續？這會切換設備開關狀態。
         unsaved_changes: 這會丟失未保存的更改！是否確認？
-        no_file_preview: '現在無法預覽%{name} 。'
+        no_file_preview: 現在無法預覽%{name} 。
     table:
       header:
         actions: 展開
@@ -388,6 +391,8 @@ app:
       timelapse: 延時
       tool: 移動控制
       tune: 調整
+      wcs: WCS 偏移
+      module5d: 5D模塊
     tooltip:
       browse_metrics: 瀏覽可用指標
       estop: 緊急停止
@@ -600,7 +605,7 @@ app:
       manual_probe: 手動探測
     tooltip:
       absolute_positioning: 絕對位置
-      extruder_disabled: '擠出機操作已被禁用，低於 min_extrude_temp 設置的最低溫度 (%{min}<small>°C</small>)'
+      extruder_disabled: 擠出機操作已被禁用，低於 min_extrude_temp 設置的最低溫度 (%{min}<small>°C</small>)
       home_xy: 歸位 XY
       home_z: 歸位 Z
       manual_probe: 手動探測
@@ -608,13 +613,17 @@ app:
       relative_positioning: 相對位置
       tools: 工具
     label:
-      stats_active_extruder: '<span class="secondary--text">擠出機配置為</span>耗材直徑 %{filamentDiameter}mm<span
-        class="secondary--text">及</span>噴嘴直徑 %{nozzleDiameter}mm'
-      stats_volumetric_flow: '以 %{extrudeSpeed}mm/s 的速度，預估擠出耗材體積為 %{estimatedVolumetricFlow}mm³/s'
+      stats_active_extruder: >-
+        <span class="secondary--text">擠出機配置為</span>耗材直徑
+        %{filamentDiameter}mm<span class="secondary--text">及</span>噴嘴直徑
+        %{nozzleDiameter}mm
+      stats_volumetric_flow: 以 %{extrudeSpeed}mm/s 的速度，預估擠出耗材體積為 %{estimatedVolumetricFlow}mm³/s
       stats_extruded_length: >-
-        以 %{extrudeFactor}% 流量擠出%{extrudeLength}mm 耗材，預估輸出長度為 %{estimatedExtrudedLength}mm
-      stats_max_speed: '<span class="secondary--text">假設</span>層高為 %{layerHeight}
-        mm，預估的最大打印速度為 %{estimatedMaxSpeed} mm/s'
+        以 %{extrudeFactor}% 流量擠出%{extrudeLength}mm 耗材，預估輸出長度為
+        %{estimatedExtrudedLength}mm
+      stats_max_speed: >-
+        <span class="secondary--text">假設</span>層高為 %{layerHeight} mm，預估的最大打印速度為
+        %{estimatedMaxSpeed} mm/s
   version:
     btn:
       check_for_updates: 檢查更新
@@ -650,7 +659,7 @@ app:
       newframe: 拍攝延時幀時出錯
     label:
       frames: '%{frames} 幀 | %{frames} 幀'
-      length: '預計長度：%{length}'
+      length: 預計長度：%{length}
       frame: 相框 | 相框
     title:
       timelapse_settings: 延時設置

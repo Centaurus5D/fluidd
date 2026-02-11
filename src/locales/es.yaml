@@ -6,7 +6,7 @@ app:
       mesh_matrix: Matriz de la malla
       probed_matrix: Matriz sondeada
       profile_name: Nombre del Perfil
-      remove_profile: 'Borrar el perfil %{name}'
+      remove_profile: Borrar el perfil %{name}
       scale: Escala de color
       wireframe: Wireframe
       base: base
@@ -18,7 +18,7 @@ app:
       not_found: No se ha encontrado ninguna malla de la cama.
       not_loaded: No está cargada ninguna malla.
     tooltip:
-      calibrate: 'Comienza una nueva calibración, se guardará con el nombre ''default'''
+      calibrate: Comienza una nueva calibración, se guardará con el nombre 'default'
       delete: Elimina el perfil
       load: Cargar el perfil
       save: Guarda el perfil de calibracion en el archivo printer.cfg
@@ -31,17 +31,19 @@ app:
       target: Objetivo
     tooltip:
       help: >-
-        Mantenga presionada la tecla <kbd>Mayús</kbd> para hacer zoom. <br /> Haga
-        clic en un elemento para mostrarlo. <br /> Haga clic en una potencia para
-        mostrarla.
+        Mantenga presionada la tecla <kbd>Mayús</kbd> para hacer zoom. <br />
+        Haga clic en un elemento para mostrarlo. <br /> Haga clic en una
+        potencia para mostrarla.
   console:
     label:
       auto_scroll: Scroll automático
       flip_layout: Invertir diseño
       hide_temp_waits: Esconder los mensajes de temperatura
     tooltip:
-      help: Introduce "help" para los comandos<br />Utiliza <kbd>Tab</kbd> para autocompletar<br
-        />Utiliza <kbd>&uarr;</kbd> y <kbd>&darr;</kbd> para el historial
+      help: >-
+        Introduce "help" para los comandos<br />Utiliza <kbd>Tab</kbd> para
+        autocompletar<br />Utiliza <kbd>&uarr;</kbd> y <kbd>&darr;</kbd> para el
+        historial
   endpoint:
     error:
       cant_connect: >-
@@ -53,7 +55,7 @@ app:
         Consulte la documentación sobre las configuraciones con varias
         impresoras <a href="%{url}" target="_blank">aquí</a>.
     hint:
-      add_printer: 'Ex., http://fluidd.local'
+      add_printer: Ex., http://fluidd.local
     msg:
       trouble: >-
         ¿Tienes problemas? <a href="%{url}" target="_blank">Haga clic aquí</a>
@@ -86,7 +88,7 @@ app:
       file_name: Nombre del archivo
       transfer_rate: Tasa de transferencia
       uploaded: Subido
-      view_section_documentation: 'Ver documentación sobre ''%{section}'''
+      view_section_documentation: Ver documentación sobre '%{section}'
     msg:
       not_found: No se encontraron archivos
       processing: Procesando...
@@ -110,11 +112,11 @@ app:
       klipper_config: '%{klipperDomain}/Config_Reference.html#%{hash}'
       crowsnest_config: https://crowsnest.mainsail.xyz/configuration/%{hash}-section
       moonraker_config: https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}
-      moonraker_telegram_bot_config: https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}
+      moonraker_telegram_bot_config: >-
+        https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}
     overlay:
       drag_files_enqueue: <strong>Arrastrar</strong> archivos aqui para encolar
-      drag_files_folders_upload: <strong>Arrastrar</strong> archivos y carpetas aqui
-        para subir
+      drag_files_folders_upload: <strong>Arrastrar</strong> archivos y carpetas aqui para subir
   gcode:
     btn:
       load_current_file: Cargar archivo actual
@@ -179,7 +181,7 @@ app:
       reset_layout: Restablecer la disposición
       reset_stats: Restablecer Estadísticas
       restart_firmware: Reiniciar firmware
-      restart_service: 'Reinciar %{service}'
+      restart_service: Reinciar %{service}
       restart_service_klipper: Reiniciar Klipper
       restart_service_moonraker: Reiniciar Moonraker
       resume: Retomar
@@ -292,7 +294,7 @@ app:
       save_as: Guardar como
       screw_index: Indice de tornillo
       screw_name: Nombre del Tornillo
-      screw_number: 'Tornillo %{index}'
+      screw_number: Tornillo %{index}
       services: Servicios
       slicer: Slicer
       speed: Velocidad
@@ -305,8 +307,8 @@ app:
       total_print_time_avg: Promedio por impresion
       total_time: Tiempo total
       total_time_avg: Promedio por impresión
-      turn_device_off: 'Apagar %{device}'
-      turn_device_on: 'Encender %{device}'
+      turn_device_off: Apagar %{device}
+      turn_device_on: Encender %{device}
       uncategorized: Sin categorizar
       unretract_extra_length: Longitud extra al des-retraer
       unretract_speed: Velocidad de des-retracción
@@ -340,6 +342,7 @@ app:
       bars: Barras
       ldap: LDAP
       cross: Cruz
+      a_offset: Un desplazamiento del eje A
     msg:
       bed_screws_adjust: >-
         Haga click en <b>Ajustado</b> si fue necesario un ajuste significativo
@@ -349,12 +352,13 @@ app:
       wrong_password: Se ha producido un error. ¿Es su contraseña correcta?
       fluidd_settings_restore_failed: Fallo al restaurar los Ajustes de Fluid!
       offline_ready: Fluidd se encuentra listo para trabajar fuera de línea.
-      welcome_back: Bienvenido de nuevo. <br>A continuación, inicie sesión para mantenerse
+      welcome_back: >-
+        Bienvenido de nuevo. <br>A continuación, inicie sesión para mantenerse
         conectado a su impresora.
-      needs_refresh: Nuevo contenido disponible. Haga clic en botón <b>Actualizar</b>
-        para ver los cambios.
-      pending_configuration_sections_deleted: Las siguientes secciones se encuentran
-        marcadas para ser eliminadas
+      needs_refresh: >-
+        Nuevo contenido disponible. Haga clic en botón <b>Actualizar</b> para
+        ver los cambios.
+      pending_configuration_sections_deleted: Las siguientes secciones se encuentran marcadas para ser eliminadas
     simple_form:
       error:
         arrayofnums: Solo números
@@ -362,15 +366,14 @@ app:
         exists: Ya existe
         invalid_number: Número inválido
         invalid_url: URL no válida
-        max: 'Máx. %{max}'
-        min: 'Mín. %{min}'
-        min_or_0: 'Mín. %{min} o 0'
+        max: Máx. %{max}
+        min: Mín. %{min}
+        min_or_0: Mín. %{min} o 0
         password_username: No se puede emparejar con el nombre de usuario
         required: Obligatorio
       msg:
         confirm: ¿Está seguro?
-        confirm_power_device_toggle: ¿Está seguro? Esto alternará la alimentación
-          del dispositivo.
+        confirm_power_device_toggle: ¿Está seguro? Esto alternará la alimentación del dispositivo.
         confirm_reboot_host: ¿Está seguro? Esto reiniciará el sistema anfitrión.
         confirm_shutdown_host: ¿Está seguro? Esto apagará el sistema anfitrión.
     table:
@@ -423,6 +426,8 @@ app:
       temperature: Térmicas
       tool: Herramienta
       tune: Calibrar
+      wcs: Compensaciones WCS
+      module5d: Módulo 5D
     tooltip:
       estop: Parada de Emergencia
       notifications: Notificaciones
@@ -490,8 +495,7 @@ app:
       reset: Restablecer opciones
       retraction_icon_size: Tamaño del icono de retracción
       show_animations: Mostrar animaciones
-      show_bed_screws_adjust_dialog_automatically: Mostrar diálogo de ajuste de tornillos
-        de cama automáticamente
+      show_bed_screws_adjust_dialog_automatically: Mostrar diálogo de ajuste de tornillos de cama automáticamente
       show_rate_of_change: Mostrar tasa de cambio de temperatura
       solid: Sólido
       starts_with: Comienza con
@@ -504,8 +508,7 @@ app:
       unit: Unidad
       z_adjust_values: Valores de ajuste de Z
       show_logo_on_background: Mostrar logotipo en el fondo
-      drag_and_drop_functionality_for_files_and_folders: Función de arrastrar y soltar
-        archivos y carpetas
+      drag_and_drop_functionality_for_files_and_folders: Función de arrastrar y soltar archivos y carpetas
       force_move_toggle_warning: Requerir confirmación al activar FORCE_MOVE
     timer_options:
       duration: Solo duración
@@ -546,9 +549,9 @@ app:
       klipper_load: Carga de Klipper
       manufactured: Fabricado
       manufacturer: Fabricante
-      mcu_awake: 'Tiempo despierto del {mcu}'
-      mcu_bandwidth: 'Ancho de banda del {mcu}'
-      mcu_load: 'Carga del {mcu}'
+      mcu_awake: Tiempo despierto del {mcu}
+      mcu_bandwidth: Ancho de banda del {mcu}
+      mcu_load: Carga del {mcu}
       model: Modelo de CPU
       moonraker_load: Carga de Moonraker
       processor_desc: Procesador

@@ -12,8 +12,8 @@ app:
       wireframe: Draadraam
     msg:
       hint: >-
-        As jy hierdie onder 'n ander naam as %{name} stoor, kan jy kies
-        om die %{name} profiel ook uit te vee
+        As jy hierdie onder 'n ander naam as %{name} stoor, kan jy kies om die
+        %{name} profiel ook uit te vee
       not_found: Geen bestaande bedmaas is gevind nie.
       not_loaded: Geen maas is gelaai nie
     tooltip:
@@ -30,9 +30,9 @@ app:
       rate_of_change: Verandering
     tooltip:
       help: >-
-        Hou shift in om te zoem.<br />Klik op 'n item om dit aan en af te skakel op
-        die grafiek.<br
-        />Klik 'n drywing om dit aan en af te skakel op die grafiek.
+        Hou shift in om te zoem.<br />Klik op 'n item om dit aan en af te skakel
+        op die grafiek.<br />Klik 'n drywing om dit aan en af te skakel op die
+        grafiek.
   console:
     label:
       auto_scroll: Rol outomaties aan
@@ -41,12 +41,12 @@ app:
   endpoint:
     error:
       cant_connect: >-
-        Iets is verkeerd, fluidd kan nie die bestemming bereik nie. Is jy
-        seker die adres is korrek?
+        Iets is verkeerd, fluidd kan nie die bestemming bereik nie. Is jy seker
+        die adres is korrek?
       cors_error: geblok deur die CORS beleid
       cors_note: >-
-        Dit mag wees dat die moonraker-konfigurasie opdateer moet word. Sien
-        die dokumentasie vir multi-drukker opstellings <a href="%{url}"
+        Dit mag wees dat die moonraker-konfigurasie opdateer moet word. Sien die
+        dokumentasie vir multi-drukker opstellings <a href="%{url}"
         target="_blank">here</a>
     hint:
       add_printer: Bv., http://fluidd.local
@@ -80,16 +80,13 @@ app:
       file_name: Lêernaam
       transfer_rate: Spoed
       uploaded: Opgelaai
-      view_section_documentation: >-
-        Sien '%{section}' dokumentasie
+      view_section_documentation: Sien '%{section}' dokumentasie
     msg:
       not_found: Geen lêers gevind nie
       processing: Verwerk tans
     overlay:
-      drag_files_folders_upload: <strong>Sleep</strong> lêers en vouers hier om op
-        te laai
-      drag_files_enqueue: <strong>Sleep</strong> lêers hier om dit op die waglys te
-        plaas
+      drag_files_folders_upload: <strong>Sleep</strong> lêers en vouers hier om op te laai
+      drag_files_enqueue: <strong>Sleep</strong> lêers hier om dit op die waglys te plaas
     title:
       add_dir: Voeg Vouer By
       add_file: Voeg Lêer By
@@ -106,9 +103,10 @@ app:
       root_disabled: '{root} root is nie beskikbaar nie. Sien die logs.'
     url:
       klipper_config: '%{klipperDomain}/Config_Reference.html#%{hash}'
-      moonraker_config: 'https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}'
-      moonraker_telegram_bot_config: 'https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}'
-      crowsnest_config: 'https://crowsnest.mainsail.xyz/configuration/%{hash}-section'
+      moonraker_config: https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}
+      moonraker_telegram_bot_config: >-
+        https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}
+      crowsnest_config: https://crowsnest.mainsail.xyz/configuration/%{hash}-section
   gcode:
     btn:
       load_current_file: Laai Huidige Lêer
@@ -218,8 +216,8 @@ app:
         Moonraker-toevoegingkonfigurasie kan <a target="_blank"
         href="%{url}">hier</a> gevind word.
       failed_components: >-
-        Moonraker het toevoegings wat gefaal het, gaan asb. die logs na,
-        dateer die konfigurasie op en herlaai moonraker.
+        Moonraker het toevoegings wat gefaal het, gaan asb. die logs na, dateer
+        die konfigurasie op en herlaai moonraker.
     label:
       accel_to_decel: Versnel. tot Vertraag.
       acceleration: Versnelling
@@ -255,8 +253,8 @@ app:
       flow: Vloei
       free: vry
       heaters_busy: >-
-        Die drukker is tans besig. Die druktaak mag faal as die
-        verwarmers nou afgeskakel word.
+        Die drukker is tans besig. Die druktaak mag faal as die verwarmers nou
+        afgeskakel word.
       high: Hoog
       host: Host
       layer: Laag
@@ -271,8 +269,8 @@ app:
       name: Naam
       new_password: Nuwe wagwoord
       no_notifications: Geen kennisgewings
-      'on': 'Aan'
-      'off': 'Af'
+      'on': Aan
+      'off': Af
       numeric_prefix_sort: Volgens numeriese voorvoegsel
       password: Wagwoord
       partial_of_total: '%{partial} van %{total}'
@@ -324,21 +322,20 @@ app:
       edit_category: Verander kategorie
       add_category: Voeg kategorie by
       file_time: Lêer
+      a_offset: '''n Asverskuiwing A '
     msg:
       password_changed: Wagwoord is verander
       wrong_password: Gits, iets het verkeerd gegaan. Is die wagwoord korrek?
       bed_screws_adjust: >-
-        Klik <b>Aangepas</b> as 'n noemenswaardige verstelling van die huidige skroef
-        nodig is; anders, klink <b>Aanvaar</b> om te begin.
+        Klik <b>Aangepas</b> as 'n noemenswaardige verstelling van die huidige
+        skroef nodig is; anders, klink <b>Aanvaar</b> om te begin.
       welcome_back: >-
-        Welkom terug.<br>Teken hier onder in om in verbinding te bly met jou drukker.
+        Welkom terug.<br>Teken hier onder in om in verbinding te bly met jou
+        drukker.
       offline_ready: Fluidd is nou gereed om vanlyn te werk.
-      needs_refresh: Nuwe inhoud beskikbaar, druk die <b>Herlaai</b> knoppie om op
-        te dateer.
-      pending_configuration_sections_deleted: Die volgende afdelings is gemerk om
-        uitgevee te word
-      rolledover_logs: >-
-        Die volgende toepassing-logs het oorgeslaan: %{applications}
+      needs_refresh: Nuwe inhoud beskikbaar, druk die <b>Herlaai</b> knoppie om op te dateer.
+      pending_configuration_sections_deleted: Die volgende afdelings is gemerk om uitgevee te word
+      rolledover_logs: 'Die volgende toepassing-logs het oorgeslaan: %{applications}'
     simple_form:
       error:
         arrayofnums: Slegs nommers
@@ -355,8 +352,9 @@ app:
         invalid_aspect: Ongeldige verhouding
       msg:
         confirm: Is jy seker?
-        confirm_delete: Is jy seker? Die geselekteerde item gaan uitgevee word. |
-          Is jy seker? Die {count} geselekteerde items gaan uitgevee word.
+        confirm_delete: >-
+          Is jy seker? Die geselekteerde item gaan uitgevee word. | Is jy seker?
+          Die {count} geselekteerde items gaan uitgevee word.
         confirm_exclude_object: Is jy seker jy wil hierdie item uitlaat om te druk?
         confirm_forcemove_toggle: Is jy seker? Dit kan die drukker beskadig.
         confirm_reboot_host: Is jy seker? Hierdie gaan die stelsel herbegin.
@@ -365,10 +363,10 @@ app:
         confirm_service_restart: Is jy seker jy wil die diens %{name} herlaai?
         confirm_service_stop: Is jy seker jy wil die diens %{name} stop?
         confirm_power_device_toggle: Is jy seker? Hierdie gaan die krag afsit.
-        unsaved_changes: Daar is ongestoorde veranderinge. Is jy seker jy wil die
-          lêer toe maak?
-        no_file_preview: >-
-          %{name} het tans geen voorskou beskikbaar nie.
+        unsaved_changes: >-
+          Daar is ongestoorde veranderinge. Is jy seker jy wil die lêer toe
+          maak?
+        no_file_preview: '%{name} het tans geen voorskou beskikbaar nie.'
     table:
       header:
         actions: Aksies
@@ -433,6 +431,8 @@ app:
       timelapse: Timelapse
       tool: Druktuig
       tune: Stel in
+      wcs: WCS-afsettings
+      module5d: 5D-module
     tooltip:
       browse_metrics: Deursoek beskikbare maatstawwe
       estop: Noodstop
@@ -506,10 +506,8 @@ app:
       collector: Versamelaar
       confirm_on_estop: Bevestig 'n Noodstop
       confirm_on_power_device_change: Bevestig toestelkragveranderinge
-      confirm_on_save_config_and_restart: Hersien hangende konfigurasieveranderinge
-        voor Stoor-en-Herlaai.
-      confirm_dirty_editor_close: Bevestig voordat redigeerder toegemaak word met
-        ongestoorde veranderinge
+      confirm_on_save_config_and_restart: Hersien hangende konfigurasieveranderinge voor Stoor-en-Herlaai.
+      confirm_dirty_editor_close: Bevestig voordat redigeerder toegemaak word met ongestoorde veranderinge
       contains: Bevat
       dark_mode: Donkermodus
       dashed: Gestippel
@@ -566,8 +564,7 @@ app:
       show_legend: Wys verduideliking
       show_rate_of_change: Wys temperatuur tempo-van-verandering
       show_relative_humidity: Wys relatiewe humiditeit
-      show_save_config_and_restart: Toon Stoor-Konfigurasie-en-Herlaai knop in boonste
-        navigasiebalk
+      show_save_config_and_restart: Toon Stoor-Konfigurasie-en-Herlaai knop in boonste navigasiebalk
       show_upload_and_print: Toon Laai-Op-en-Druk knop in boonste navigasiebalk
       solid: Solied
       starts_with: Begin met
@@ -586,8 +583,7 @@ app:
       text_sort_order: Tekssorteervolgorde
       force_move_toggle_warning: Bevestig voordat FORCE_MOVE aangeskakel word
       show_manual_probe_dialog_automatically: Wys Handmatige-probe-dialoog outomaties
-      show_bed_screws_adjust_dialog_automatically: Wys bedskroefverstelling-dialoog
-        outomaties
+      show_bed_screws_adjust_dialog_automatically: Wys bedskroefverstelling-dialoog outomaties
     timer_options:
       duration: Slegs Tydsduur
       filament: Filamentskatting
@@ -605,18 +601,16 @@ app:
       thermal_presets: Temperatuur-Voorafinstellings
       tool: Druktuig
     tooltip:
-      diagnostics_performance: '[BETA] Die loghou van diagnostieke inligting mag die
-        prestasie beïnvloed.'
+      diagnostics_performance: >-
+        [BETA] Die loghou van diagnostieke inligting mag die prestasie
+        beïnvloed.
       gcode_coords: Gebruik GCode posisie i.p.v. druktuigposisie op paneelblad
-      show_manual_probe_dialog_automatically: Wys hulpdialoog outomaties wanneer 'n
-        probe met die hand uitgevoer word
-      show_bed_screws_adjust_dialog_automatically: Wys hulpdialoog outomaties wanneer
-        BED_SCREWS_ADJUST geloop word
+      show_manual_probe_dialog_automatically: Wys hulpdialoog outomaties wanneer 'n probe met die hand uitgevoer word
+      show_bed_screws_adjust_dialog_automatically: Wys hulpdialoog outomaties wanneer BED_SCREWS_ADJUST geloop word
   socket:
     msg:
       connecting: Konnekteer tans aan moonraker...
-      no_connection: Geen moonraker-konneksie nie. Gaan moonraker-status na en / of
-        vervris.
+      no_connection: Geen moonraker-konneksie nie. Gaan moonraker-status na en / of vervris.
   system_info:
     label:
       capacity: Kapasiteit
@@ -667,24 +661,21 @@ app:
       tools: Gereedskap
     label:
       stats_active_extruder: >-
-        <span class="secondary--text">Die huidige ekstruderkonfigurasie is gestel
-        vir</span>
-        %{filamentDiameter} mm diameter filament
-        <span class="secondary--text">en</span>
-        %{nozzleDiameter} mm mondstuk
+        <span class="secondary--text">Die huidige ekstruderkonfigurasie is
+        gestel vir</span> %{filamentDiameter} mm diameter filament <span
+        class="secondary--text">en</span> %{nozzleDiameter} mm mondstuk
       stats_volumetric_flow: >-
         Extruder voer teen %{extrudeSpeed} mm/s<span class="secondary--text">,
-        Die ekstruder behoort 'n</span>
-        geskatte volumetriese vloei van %{estimatedVolumetricFlow} mm³/s te handhaaf
+        Die ekstruder behoort 'n</span> geskatte volumetriese vloei van
+        %{estimatedVolumetricFlow} mm³/s te handhaaf
       stats_extruded_length: >-
-        Die invoer van %{extrudeLength} mm filament teen
-        %{extrudeFactor} % vloei<span class="secondary--text">,
-        lewer 'n</span>
-        geskatte uitgedrukte lengte van %{estimatedExtrudedLength} mm
+        Die invoer van %{extrudeLength} mm filament teen %{extrudeFactor} %
+        vloei<span class="secondary--text">, lewer 'n</span> geskatte
+        uitgedrukte lengte van %{estimatedExtrudedLength} mm
       stats_max_speed: >-
-        <span class="secondary--text">Vir 'n</span>
-        %{layerHeight} mm laaghoogte<span class="secondary--text">,
-        is</span> die maksimum drukspoed %{estimatedMaxSpeed} mm/s
+        <span class="secondary--text">Vir 'n</span> %{layerHeight} mm
+        laaghoogte<span class="secondary--text">, is</span> die maksimum
+        drukspoed %{estimatedMaxSpeed} mm/s
   version:
     btn:
       check_for_updates: Kyk vir opdaterings

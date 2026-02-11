@@ -10,5 +10,12 @@ app:
       active: aktiv
       remove_profile: Ta bort %{name} profil
     msg:
-      hint: Om det sparas som något annat än %{name}, kan du välja att också ta bort
+      hint: >-
+        Om det sparas som något annat än %{name}, kan du välja att också ta bort
         %{name} profilen
+  general:
+    title:
+      wcs: WCS Offsets
+      module5d: 5D-modul
+    label:
+      a_offset: En axelförskjutning A

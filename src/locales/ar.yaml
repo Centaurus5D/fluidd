@@ -218,6 +218,7 @@ app:
       velocity: السرعة
       visible: ظاهر
       z_offset: موازنة Z
+      a_offset: إزاحة المحور A
     msg:
       password_changed: تم تغيير كلمة المرور
       wrong_password: حدث خطأ هل انت متأكد من كلمة المرور؟
@@ -283,6 +284,8 @@ app:
       temperature: مؤشرات حرارية
       tool: الفوهة
       tune: ضبط
+      wcs: إزاحة WCS
+      module5d: وحدة 5D
     tooltip:
       estop: ايقاف طوارئ
       reload_klipper: اعادة تحميل تكوين klipper.
@@ -363,8 +366,7 @@ app:
   socket:
     msg:
       connecting: Connecting to moonraker...
-      no_connection: No moonraker connection. Please check moonraker status and /
-        or refresh.
+      no_connection: No moonraker connection. Please check moonraker status and / or refresh.
   system_info:
     label:
       capacity: السعة

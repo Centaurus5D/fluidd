@@ -24,6 +24,25 @@
       </app-btn>
     </template>
 
+    <template v-if="fullscreen">
+      <div>
+        <v-card-text>
+          <v-row justify="space-between" align="start">
+            <v-col class="controls-wrapper">
+              <template v-if="!printerPrinting">
+                <toolhead-control-cross v-if="toolheadControlStyle === 'cross'" />
+                <toolhead-control-bars v-else-if="toolheadControlStyle === 'bars'" />
+                <toolhead-control-circle v-else-if="toolheadControlStyle === 'circle'" />
+              </template>
+            </v-col>
+            <v-col class="controls-wrapper">
+              <toolhead-position />
+            </v-col>
+          </v-row>
+        </v-card-text>
+      </div>
+    </template>
+
     <module-5d />
   </collapsable-card>
 </template>
@@ -33,10 +52,19 @@ import { Component, Mixins, Prop } from "vue-property-decorator";
 import StateMixin from "@/mixins/state";
 import ToolheadMixin from "@/mixins/toolhead";
 import Module5d from "./Module5d.vue";
+import ToolheadControlCross from "../toolhead/ToolheadControlCross.vue";
+import ToolheadControlBars from "../toolhead/ToolheadControlBars.vue";
+import ToolheadControlCircle from "../toolhead/ToolheadControlCircle.vue";
+import ToolheadPosition from "../toolhead/ToolheadPosition.vue";
+import type { ToolheadControlStyle } from "@/store/config/types";
 
 @Component({
   components: {
     Module5d,
+    ToolheadControlCross,
+    ToolheadControlBars,
+    ToolheadControlCircle,
+    ToolheadPosition,
   },
 })
 export default class Module5dCard extends Mixins(StateMixin, ToolheadMixin) {
@@ -53,5 +81,16 @@ export default class Module5dCard extends Mixins(StateMixin, ToolheadMixin) {
   get hasSteppersEnabled(): boolean {
     return this.$typedGetters["printer/getHasSteppersEnabled"];
   }
+
+  get toolheadControlStyle(): ToolheadControlStyle {
+    return this.$typedState.config.uiSettings.general.toolheadControlStyle;
+  }
 }
 </script>
+
+<style type="scss" scoped>
+.controls-wrapper {
+  min-width: 380px !important;
+  max-width: 450px !important;
+}
+</style>

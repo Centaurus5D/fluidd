@@ -7,11 +7,11 @@ app:
       mesh_matrix: 网格矩阵
       probed_matrix: 探测点矩阵
       profile_name: 配置文件
-      remove_profile: '删除 %{name} 配置文件'
+      remove_profile: 删除 %{name} 配置文件
       scale: 显示偏差值
       wireframe: 显示网格线
     msg:
-      hint: '如果将 %{name} 另存, 你也可以选择删除此 %{name} 配置'
+      hint: 如果将 %{name} 另存, 你也可以选择删除此 %{name} 配置
       not_found: 热床网格配置不存在
       not_loaded: 没有加载热床网格配置
     tooltip:
@@ -41,8 +41,9 @@ app:
       flip_layout: 翻转布局
       hide_temp_waits: 隐藏温度信息
     tooltip:
-      help: 输入"help"获取可用命令<br />使用 <kbd>Tab键</kbd> 自动补全<br 
-        />使用<kbd>&uarr;键</kbd> 和 <kbd>&darr;键</kbd>输入历史命令
+      help: >-
+        输入"help"获取可用命令<br />使用 <kbd>Tab键</kbd> 自动补全<br />使用<kbd>&uarr;键</kbd> 和
+        <kbd>&darr;键</kbd>输入历史命令
   endpoint:
     error:
       cant_connect: 出了点问题，Fluidd 无法连接目标。你确定这是正确的设备地址？
@@ -56,7 +57,8 @@ app:
       trouble: 遇到麻烦？<a href="%{url}" target="_blank">点击此处</a> 查看更多信息。
     tooltip:
       endpoint_examples: >-
-        输入您的 Moonraker API 地址。<br />例如：<br/><blockquote>fluidd.local, https://192.168.1.150</blockquote>
+        输入您的 Moonraker API 地址。<br />例如：<br/><blockquote>fluidd.local,
+        https://192.168.1.150</blockquote>
   endstop:
     states:
       label:
@@ -109,10 +111,10 @@ app:
       root_disabled: '{root} G代码文件目录不可用，请首先连接打印机或者检查G代码存放目录的路径与读权限。'
     url:
       klipper_config: '%{klipperDomain}/zh/Config_Reference.html#%{hash}'
-      moonraker_config: 'https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}'
-      moonraker_telegram_bot_config: 'https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}'
-      crowsnest_config: 
-        https://crowsnest.mainsail.xyz/configuration/%{hash}-section
+      moonraker_config: https://moonraker.readthedocs.io/en/latest/configuration/#%{hash}
+      moonraker_telegram_bot_config: >-
+        https://github.com/nlef/moonraker-telegram-bot/wiki/Sample-config#%{hash}
+      crowsnest_config: https://crowsnest.mainsail.xyz/configuration/%{hash}-section
   gcode:
     btn:
       load_current_file: 载入当前文件
@@ -132,7 +134,7 @@ app:
       show_retractions: 显示回抽
       parsing_file: 解析文件
     msg:
-      confirm: '文件 "%{filename}" 大小为 %{size}，这可能会导致系统短暂失去响应，是否确认？'
+      confirm: 文件 "%{filename}" 大小为 %{size}，这可能会导致系统短暂失去响应，是否确认？
     overlay:
       drag_file_load: <strong>拖拽</strong>一个gcode文件到此处加载
   general:
@@ -187,7 +189,7 @@ app:
       reset_layout: 重置布局
       reset_default_layout: 重置默认布局
       restart_firmware: 重启Firmware
-      restart_service: '重启 %{service}'
+      restart_service: 重启 %{service}
       restart_service_klipper: 重启Klipper
       restart_service_moonraker: 重启Moonraker
       resume: 恢复
@@ -219,9 +221,9 @@ app:
       copy: 拷贝
       perform_time_analysis: 预计打印时间
     error:
-      app_setup_link: '如需查看 Fluidd 详细配置规则，请点击<a target="_blank" href="%{url}">此处</a>。'
+      app_setup_link: 如需查看 Fluidd 详细配置规则，请点击<a target="_blank" href="%{url}">此处</a>。
       app_warnings_found: '%{appName} 出现警告'
-      components_config: '如需查看 Moonraker 详细配置规则，请点击<a target="_blank" href="%{url}">此处</a>。'
+      components_config: 如需查看 Moonraker 详细配置规则，请点击<a target="_blank" href="%{url}">此处</a>。
       failed_components: Moonraker 插件启用失败，请检查您的日志，更新您的配置并重新启动 Moonraker。
       printer_powered_off: 此打印机当前已关机<br/><br/> 要开启该打印机, 请点击左侧按钮.
     label:
@@ -269,7 +271,7 @@ app:
       manage_accounts: 账户管理
       user_managed_source: 由 %{source} 身份验证管理的用户
       m117: M117
-      moonraker: 'Moonraker'
+      moonraker: Moonraker
       name: 名称
       new_password: 新密码
       no_notifications: 暂无通知
@@ -308,8 +310,8 @@ app:
       total_print_time_avg: 平均打印时间
       total_time: 总时间
       total_time_avg: 平均时间
-      turn_device_on: '打开 %{device}'
-      turn_device_off: '关闭 %{device}'
+      turn_device_on: 打开 %{device}
+      turn_device_off: 关闭 %{device}
       uncategorized: 未分类
       unretract_extra_length: 回抽额外装填量
       unretract_speed: 回抽装填速度
@@ -343,6 +345,7 @@ app:
       unload_filament: 卸载耗材
       load_filament: 加载耗材
       clean_nozzle: 清理喷嘴
+      a_offset: 轴偏移 A
     msg:
       password_changed: 密码已更改
       wrong_password: 密码错误
@@ -363,9 +366,9 @@ app:
         invalid_number: 无效数字
         invalid_url: 无效的URL地址
         invalid_expression: 无效表达
-        max: '最大 %{max}'
-        min: '最小 %{min}'
-        min_or_0: '最小 %{min} 或 0'
+        max: 最大 %{max}
+        min: 最小 %{min}
+        min_or_0: 最小 %{min} 或 0
         password_username: 用户名密码不匹配
         required: 必填
         invalid_aspect: 宽高比无效
@@ -376,16 +379,16 @@ app:
         confirm_forcemove_toggle: 这可能会损坏打印机！是否确认？
         confirm_reboot_host: 这会重启您的系统！是否确认？
         confirm_shutdown_host: 这会关闭您的系统！是否确认？
-        confirm_service_start: '您确定要启动 %{name} 服务吗？'
-        confirm_service_restart: '你确定要重启 %{name} 服务吗?'
-        confirm_service_stop: '你确定要停止 %{name} 服务吗?'
+        confirm_service_start: 您确定要启动 %{name} 服务吗？
+        confirm_service_restart: 你确定要重启 %{name} 服务吗?
+        confirm_service_stop: 你确定要停止 %{name} 服务吗?
         confirm_power_device_toggle: 这会切换设备开关状态！是否确认？
         unsaved_changes: 这会丢失未保存的更改！是否确认？
-        no_file_preview: '当前无法预览%{name} 。'
+        no_file_preview: 当前无法预览%{name} 。
         confirm_cancel_print: 确定要取消当前打印吗？
-        confirm_remove_camera: 确定移除摄像头 %{name}？
+        confirm_remove_camera: "确定移除摄像头\_%{name}？"
         confirm_remove_user: 确定要移除用户 %{username} 吗？
-        confirm_remove_printer: 确定移除打印机 %{name}？
+        confirm_remove_printer: "确定移除打印机\_%{name}？"
         confirm_emergency_stop: 确定要紧急停止打印机吗？
         confirm_clear_mesh: 打印机当前正忙。您确定要清除热床网格吗？
         confirm_remove_thermal_preset: 确定要移除温度预设%{name}吗？
@@ -470,6 +473,8 @@ app:
       login: 登录
       macro_category_settings: 宏类别设置
       beacon: Beacon探针
+      wcs: WCS 偏移
+      module5d: 5D模块
     tooltip:
       browse_metrics: 浏览可用指标
       estop: 紧急停止
@@ -513,7 +518,7 @@ app:
       ready: 就绪
       standby: 待机
     title:
-      stepper_driver_overheating: 步进驱动器 %{name} 过热
+      stepper_driver_overheating: "步进驱动器\_%{name}\_过热"
       printer_status: 打印机状态
     msg:
       possible_print_failure: 这可能导致打印失败
@@ -696,14 +701,12 @@ app:
       diagnostics_performance: '[BETA] 记录诊断信息可能会影响性能'
       gcode_coords: 使用 GCode 坐标位置而不是仪表板上的打印头坐标位置
       show_manual_probe_dialog_automatically: 运行手动探测工具时自动显示帮助对话框
-      show_bed_screws_adjust_dialog_automatically: 
-        如果运行BED_SCREWS_ADJUST工具，自动显示帮助对话框
+      show_bed_screws_adjust_dialog_automatically: 如果运行BED_SCREWS_ADJUST工具，自动显示帮助对话框
       average_calculation: 如果选择多个选项，则将计算平均值
       keyboard_shortcuts: '[BETA] 启用功能：按“?”查看可用键盘快捷键列表'
       warn_on_stepper_driver_overheating: 仅限TMC驱动
       warn_on_cpu_throttled: CPU降频会导致打印失败
-      show_screws_tilt_adjust_dialog_automatically: 运行 SCREWS_TILT_CALCULATE 
-        工具时，会自动显示辅助对话框
+      show_screws_tilt_adjust_dialog_automatically: 运行 SCREWS_TILT_CALCULATE 工具时，会自动显示辅助对话框
   socket:
     msg:
       connecting: 正在连接至 Moonraker ...
@@ -745,8 +748,9 @@ app:
     msg:
       no_devices_found: 未发现设备
       no_devices_searched: 使用刷新按钮搜索设备
-      canbus_warning: 只能检测到未分配的 CAN 总线节点。<br>建议 CAN 
-        总线上只连接一个未分配的设备，以避免通信问题。<br>更多信息请访问<a target="_blank" 
+      canbus_warning: >-
+        只能检测到未分配的 CAN 总线节点。<br>建议 CAN 总线上只连接一个未分配的设备，以避免通信问题。<br>更多信息请访问<a
+        target="_blank"
         href="https://moonraker.readthedocs.io/en/latest/external_api/machine/#query-unassigned-canbus-uuids">。</a>
   tool:
     btn:
@@ -758,7 +762,7 @@ app:
       manual_probe: 手动探测
     tooltip:
       absolute_positioning: 绝对位置
-      extruder_disabled: '挤出机操作已被禁用，低于 min_extrude_temp 设置的最低温度 (%{min}<small>°C</small>)'
+      extruder_disabled: 挤出机操作已被禁用，低于 min_extrude_temp 设置的最低温度 (%{min}<small>°C</small>)
       home_xy: 归位 XY
       home_z: 归位 Z
       manual_probe: 手动探测
@@ -766,15 +770,19 @@ app:
       relative_positioning: 相对位置
       tools: 工具
     label:
-      stats_active_extruder: '<span class="secondary--text">挤出机配置为</span>耗材直径 %{filamentDiameter}mm<span
-        class="secondary--text">，</span>喷嘴直径 %{nozzleDiameter}mm'
-      stats_volumetric_flow: '以 %{extrudeSpeed}mm/s 的速度挤出<span class="secondary--text">，预估耗材挤出体积流量为
-        </span> %{estimatedVolumetricFlow}mm³/s'
+      stats_active_extruder: >-
+        <span class="secondary--text">挤出机配置为</span>耗材直径
+        %{filamentDiameter}mm<span class="secondary--text">，</span>喷嘴直径
+        %{nozzleDiameter}mm
+      stats_volumetric_flow: >-
+        以 %{extrudeSpeed}mm/s 的速度挤出<span class="secondary--text">，预估耗材挤出体积流量为
+        </span> %{estimatedVolumetricFlow}mm³/s
       stats_extruded_length: >-
-        以 %{extrudeFactor}% 流量挤出 %{extrudeLength}mm 耗材<span class="secondary--text">，预估输出长度为</span>
-        %{estimatedExtrudedLength}mm
-      stats_max_speed: '<span class="secondary--text">假定</span>层高为 %{layerHeight}
-        mm，<span class="secondary--text">预估</span> 最大打印速度为 %{estimatedMaxSpeed} mm/s'
+        以 %{extrudeFactor}% 流量挤出 %{extrudeLength}mm 耗材<span
+        class="secondary--text">，预估输出长度为</span> %{estimatedExtrudedLength}mm
+      stats_max_speed: >-
+        <span class="secondary--text">假定</span>层高为 %{layerHeight} mm，<span
+        class="secondary--text">预估</span> 最大打印速度为 %{estimatedMaxSpeed} mm/s
   version:
     btn:
       check_for_updates: 检查更新
@@ -792,8 +800,7 @@ app:
       package_list: 软件包列表
       up_to_date: 最新
       updates_available: 有可用更新
-      old_component_version: 您正在使用 %{name} 的旧版本，该版本不支持 Fluidd 的所有功能。<br>至少将 
-        %{name} 更新至 %{version}。
+      old_component_version: 您正在使用 %{name} 的旧版本，该版本不支持 Fluidd 的所有功能。<br>至少将 %{name} 更新至 %{version}。
     status:
       finished: 更新已完成
       updating: 正在更新...
@@ -812,7 +819,7 @@ app:
       newframe: 拍摄延时帧时出错
     label:
       frames: '%{frames} 帧 | %{frames} 帧'
-      length: '预计长度：%{length}'
+      length: 预计长度：%{length}
       frame: 框架
     title:
       timelapse_settings: 延时设置
@@ -940,15 +947,15 @@ app:
       color: 颜色
     msg:
       no_spool_id: 无spool ID
-      reset_ttg_map_confirmation: 
-        这会将整个工具到通道映射和自动续料组重置为“mmu_parameters.cfg”中定义的默认值，或在没有默认值的情况下重置为默认的 1:1 
+      reset_ttg_map_confirmation: >-
+        这会将整个工具到通道映射和自动续料组重置为“mmu_parameters.cfg”中定义的默认值，或在没有默认值的情况下重置为默认的 1:1
         映射
       select_gate: 选择您想要编辑的通道/料盘信息
-      spoolman_off: Happy Hare 中Spoolman support 设定为 "%{mode}" . 分配spool 
-        id至通道已禁用
+      spoolman_off: Happy Hare 中Spoolman support 设定为 "%{mode}" . 分配spool id至通道已禁用
       no_tool: 必须先选择一个工具
-      spoolman_pull: Spoolman support设定为"%{mode}"模式. 大多数通道属性的本地编辑已禁用. 请直接在 
-        Spoolman DB 中分配 料盘/通道映射，或使用 MMU_SPOOLMAN 命令
+      spoolman_pull: >-
+        Spoolman support设定为"%{mode}"模式. 大多数通道属性的本地编辑已禁用. 请直接在 Spoolman DB 中分配
+        料盘/通道映射，或使用 MMU_SPOOLMAN 命令
       no_matching_spool: 找不到匹配的料盘
       are_you_sure: 你确定？
       bad_temperature: 温度超出范围
@@ -964,8 +971,7 @@ app:
       tool_bypass: 工具已设定至旁通!
       warning_prefix: 警告-
       no_active_spool: 无激活料盘
-      reset_gate_map_confirmation: 
-        这会将所有通道映射重置为“mmu_parameters.cfg”中定义的默认值，如果没有可用的默认值，则重置为空映射
+      reset_gate_map_confirmation: 这会将所有通道映射重置为“mmu_parameters.cfg”中定义的默认值，如果没有可用的默认值，则重置为空映射
       spoolman_other: Spoolman support设定为"%{mode}". 您可以选择分配 Spool ID 或直接编辑通道属性
       gate_bypass: 通道已设定至旁通!
       set_gate: 设定至当前通道
@@ -982,8 +988,9 @@ app:
       no_slicer_info: 无切片信息，选择 %{tool} 的默认映射
       select_tool: 选择要映射的工具，然后从列表中选择通道
       multi_color: 这看起来像是使用 %{numTools} 个工具进行的多材料单挤出机打印。你或许应该查看一下工具映射
-      recover_intro: 这是一个低级修复，用于当Happy 
-        Hare与您的MMU不一致时使用。建议首先尝试自动恢复，但可能需要此操作来纠正当前工具或通道（也许在Type-A 
+      recover_intro: >-
+        这是一个低级修复，用于当Happy
+        Hare与您的MMU不一致时使用。建议首先尝试自动恢复，但可能需要此操作来纠正当前工具或通道（也许在Type-A
         MMU上，您应卸载并归位选择器）。
     btn:
       check_gate: 检测通道
@@ -1006,8 +1013,8 @@ app:
       edit_ttg_map: 映射工具/耗材
       eject: 弹出
       recover_state: 修复MMU状态
-      off: 关闭
-      on: 开启
+      'off': 关闭
+      'on': 开启
     title:
       mmu_maintenance: MMU维护
       edit_ttg_map: 映射工具/耗材 (编辑TTG映射)

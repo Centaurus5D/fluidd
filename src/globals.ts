@@ -198,6 +198,8 @@ import {
   mdiArrowDownBold,
   mdiArrowUpBold,
   mdiNumeric5CircleOutline,
+  mdiChartLineVariant,
+  mdiMoveResize,
 } from "@mdi/js";
 
 import {
@@ -585,6 +587,8 @@ export const Icons = Object.freeze({
   afcLoadLane: mdiArrowDownBold,
   afcEjectFilament: mdiEject,
   module5d: mdiNumeric5CircleOutline,
+  wcsChart: mdiChartLineVariant,
+  probeChart: mdiMoveResize,
 });
 
 export const Waits = Object.freeze({
