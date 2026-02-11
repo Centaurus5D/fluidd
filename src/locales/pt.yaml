@@ -434,6 +434,7 @@ app:
       edit_chart: Editar gráfico
       wcs: Compensações WCS
       module5d: Módulo 5D
+      probe_offsets: Deslocamentos de sonda
     tooltip:
       estop: Paragem emergência
       reload_klipper: Recarrega a configuração do klipper.

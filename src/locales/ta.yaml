@@ -367,6 +367,7 @@ app:
       tune: டியூன்
       wcs: WCS ஆஃப்செட்டுகள்
       module5d: 5D தொகுதி
+      probe_offsets: ஆய்வு ஆஃப்செட்டுகள்
     tooltip:
       browse_metrics: கிடைக்கக்கூடிய அளவீடுகளை உலாவுக
       estop: அவசர நிறுத்தம்

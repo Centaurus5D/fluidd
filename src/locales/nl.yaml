@@ -490,6 +490,7 @@ app:
       login: Inloggen
       wcs: WCS-compensaties
       module5d: 5D-module
+      probe_offsets: Sonde-offsets
     tooltip:
       estop: Noodstop
       reload_klipper: Herlaad de klipper configuratie.

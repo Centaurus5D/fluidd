@@ -286,6 +286,7 @@ app:
       tune: ضبط
       wcs: إزاحة WCS
       module5d: وحدة 5D
+      probe_offsets: تعويضات التحقيق
     tooltip:
       estop: ايقاف طوارئ
       reload_klipper: اعادة تحميل تكوين klipper.

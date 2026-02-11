@@ -334,6 +334,7 @@ app:
       tune: Calibrazioni
       wcs: Scostamenti WCS
       module5d: Modulo 5D
+      probe_offsets: Offset della sonda
     tooltip:
       estop: Arresto di Emergenza
       reload_klipper: Ricarica la configurazione di Klipper.

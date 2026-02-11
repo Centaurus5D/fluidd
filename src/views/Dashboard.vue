@@ -42,6 +42,8 @@ import PrinterStatusCard from "@/components/widgets/status/PrinterStatusCard.vue
 import JobsCard from "@/components/widgets/jobs/JobsCard.vue";
 import ToolheadCard from "@/components/widgets/toolhead/ToolheadCard.vue";
 import Module5dCard from "@/components/widgets/module5d/Module5dCard.vue";
+import WcsCard from "@/components/widgets/module5d/WcsCard.vue";
+import ProbeCard from "@/components/widgets/module5d/ProbeCard.vue";
 import TemperatureCard from "@/components/widgets/thermals/TemperatureCard.vue";
 import CameraCard from "@/components/widgets/camera/CameraCard.vue";
 import MacrosCard from "@/components/widgets/macros/MacrosCard.vue";
@@ -66,6 +68,8 @@ import AfcCard from "@/components/widgets/afc/AfcCard.vue";
     JobsCard,
     ToolheadCard,
     Module5dCard,
+    WcsCard,
+    ProbeCard,
     MacrosCard,
     TemperatureCard,
     CameraCard,
@@ -239,6 +243,8 @@ export default class Dashboard extends Mixins(StateMixin) {
     if (item.id === "temperature-card" && !this.hasHeatersOrTemperatureSensors) return true;
     if (item.id === "afc-card" && !this.supportsAfc) return true;
     if (item.id === "module-5d-card" && !this.supports5dModule) return true;
+    if (item.id === "wcs-card" && !this.supports5dModule) return true;
+    if (item.id === "probe-card" && !this.supports5dModule) return true;
 
     // Otherwise return the opposite of whatever the enabled state is.
     return !item.enabled;

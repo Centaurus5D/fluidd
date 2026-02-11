@@ -25,10 +25,10 @@
 
     <v-card-text>
       <v-row>
-        <v-col>
+        <v-col cols="12" sm="6">
           <wcs-chart ref="chart" :hovered="hoveredOffset" />
         </v-col>
-        <v-col>
+        <v-col cols="12" sm="6">
           <wcs-input @focus="onFocus" @blur="onBlur" />
         </v-col>
       </v-row>

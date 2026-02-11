@@ -606,6 +606,7 @@ app:
       tune: Tune
       wcs: WCS Offsets
       module5d: 5D Module
+      probe_offsets: Probe offsets
     tooltip:
       browse_metrics: Browse available metrics
       estop: Emergency Stop

@@ -519,6 +519,7 @@ app:
       macro_category_settings: Налаштування категорії макросів
       wcs: Зміщення WCS
       module5d: 5D модуль
+      probe_offsets: Зміщення зонда
     tooltip:
       browse_metrics: Доступні показники
       estop: Аварійна зупинка

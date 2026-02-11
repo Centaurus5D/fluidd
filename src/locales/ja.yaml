@@ -496,6 +496,7 @@ app:
       tune: チューン
       wcs: WCS オフセット
       module5d: 5Dモジュール
+      probe_offsets: プローブのオフセット
     tooltip:
       browse_metrics: 利用可能なメトリックを閲覧する
       estop: 緊急停止

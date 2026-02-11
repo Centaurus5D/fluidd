@@ -515,6 +515,7 @@ app:
       macro_category_settings: Makro Kategori Ayarları
       wcs: WCS Ofsetleri
       module5d: 5D Modülü
+      probe_offsets: Prob ofsetleri
     tooltip:
       browse_metrics: Mevcut metrikleri göz atın
       estop: Acil Dur

@@ -1,21 +1,21 @@
 declare namespace Klipper {
-  type NonZeroDigit = '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9'
-  type Digit = '0' | NonZeroDigit
+  type NonZeroDigit = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9";
+  type Digit = "0" | NonZeroDigit;
 
   export type ExtruderKey =
-    | 'extruder'
+    | "extruder"
     | `extruder${NonZeroDigit}`
-    | `extruder${NonZeroDigit}${Digit}`
+    | `extruder${NonZeroDigit}${Digit}`;
 
-  export type TmcKey = `tmc${'2130' | '2208' | '2209' | '2660' | '2240' | '5160'} ${string}`
+  export type TmcKey = `tmc${"2130" | "2208" | "2209" | "2660" | "2240" | "5160"} ${string}`;
 
-  export type MmuUnitKey = `unit_${Digit}` | `unit_${NonZeroDigit}${Digit}`
+  export type MmuUnitKey = `unit_${Digit}` | `unit_${NonZeroDigit}${Digit}`;
 
   export type AfcUnitKey = `${
-    | 'AFC_BoxTurtle'
-    | 'AFC_NightOwl'
-    | 'AFC_QuattroBox'
-    | 'AFC_HTLF'} ${string}`
+    | "AFC_BoxTurtle"
+    | "AFC_NightOwl"
+    | "AFC_QuattroBox"
+    | "AFC_HTLF"} ${string}`;
 
   type PrinterStateBaseType = {
     // These keys are always available
@@ -43,7 +43,8 @@ declare namespace Klipper {
 
       bed_mesh: BedMeshState;
 
-      module_5d: Module5dState
+      module_5d: Module5dState;
+      module_5d_probe: Module5dProbeState;
 
       bed_screws: BedScrewsState;
 
@@ -57,7 +58,7 @@ declare namespace Klipper {
 
       fan: FanState;
 
-      [key: `${'heater_fan' | 'controller_fan'} ${string}`]: FanState;
+      [key: `${"heater_fan" | "controller_fan"} ${string}`]: FanState;
 
       [key: `filament_switch_sensor ${string}`]: FilamentSwitchSensorState;
 
@@ -79,7 +80,7 @@ declare namespace Klipper {
 
       heaters: HeatersState;
 
-      [key: `${'led' | 'neopixel' | 'dotstar' | 'pca9533' | 'pca9632'} ${string}`]: LedState;
+      [key: `${"led" | "neopixel" | "dotstar" | "pca9533" | "pca9632"} ${string}`]: LedState;
 
       manual_probe: ManualProbeState;
 
@@ -91,7 +92,7 @@ declare namespace Klipper {
 
       motion_report: MotionReportState;
 
-      [key: `${'output_pin' | 'pwm_tool'} ${string}`]: OutputPinState;
+      [key: `${"output_pin" | "pwm_tool"} ${string}`]: OutputPinState;
 
       pause_resume: PauseResumeState;
 
@@ -120,17 +121,17 @@ declare namespace Klipper {
       stepper_enable: StepperEnableState;
 
       [
-      key: `${
-          | 'aht10'
-          | 'aht1x'
-          | 'aht2x'
-          | 'aht3x'
-          | 'bme280'
-          | 'htu21d'
-          | 'sht3x'
-          | 'lm75'
-          | 'temperature_host'
-          | 'temperature_combined'} ${string}`
+        key: `${
+          | "aht10"
+          | "aht1x"
+          | "aht2x"
+          | "aht3x"
+          | "bme280"
+          | "htu21d"
+          | "sht3x"
+          | "lm75"
+          | "temperature_host"
+          | "temperature_combined"} ${string}`
       ]: TemperatureSensor2State;
 
       [key: `temperature_fan ${string}`]: TemperatureFanState;
@@ -193,7 +194,7 @@ declare namespace Klipper {
 
       [key: AfcUnitKey]: AfcUnitState;
     }
-  >
+  >;
 
   export interface PrinterState extends PrinterStateBaseType {
     [key: string]: Record<string, any> | undefined;
@@ -225,7 +226,7 @@ declare namespace Klipper {
   }
 
   export interface IdleTimeoutState {
-    state: 'Idle' | 'Printing' | 'Ready';
+    state: "Idle" | "Printing" | "Ready";
     printing_time: number;
   }
 
@@ -242,7 +243,7 @@ declare namespace Klipper {
     print_time: number;
     stalls: number;
     estimated_print_time: number;
-    extruder: '' | ExtruderKey;
+    extruder: "" | ExtruderKey;
     position: [number, number, number, ...number[]];
     max_velocity: number;
     max_accel: number;
@@ -284,6 +285,14 @@ declare namespace Klipper {
     homing_origin: [number, number];
     position: [number, number];
     gcode_position: [number, number];
+  }
+
+  export interface Module5dProbeState {
+    last_query: number;
+    last_z_result: number;
+    last_result: [number, number, number];
+    last_binary_search_result: [number, number, number];
+    offsets: [number, number, number];
   }
 
   export interface BedMeshProfileState {
@@ -376,7 +385,7 @@ declare namespace Klipper {
   }
 
   export interface GcodeButtonState {
-    state: 'PRESSED' | 'RELEASED';
+    state: "PRESSED" | "RELEASED";
   }
 
   export interface GcodeMacroState extends Record<string, any> {}
@@ -412,7 +421,7 @@ declare namespace Klipper {
   }
 
   export interface HeatersState {
-    available_heaters: ('heater_bed' | `heater_generic ${string}` | ExtruderKey)[];
+    available_heaters: ("heater_bed" | `heater_generic ${string}` | ExtruderKey)[];
     available_sensors: string[];
     available_monitors?: string[];
   }
@@ -465,7 +474,7 @@ declare namespace Klipper {
     total_duration: number;
     print_duration: number;
     filament_used: number;
-    state: 'printing' | 'paused' | 'standby' | 'complete' | 'cancelled' | 'error';
+    state: "printing" | "paused" | "standby" | "complete" | "cancelled" | "error";
     message: string;
     info?: {
       total_layer: number | null;
@@ -499,7 +508,7 @@ declare namespace Klipper {
       string,
       {
         z: number;
-        sign: 'CW' | 'CCW';
+        sign: "CW" | "CCW";
         adjust: string;
         is_base: boolean;
       }
@@ -555,8 +564,8 @@ declare namespace Klipper {
   }
 
   export interface DualCarriageState {
-    carriage_0: 'INACTIVE' | 'ACTIVE';
-    carriage_1: 'INACTIVE' | 'ACTIVE' | 'COPY' | 'MIRROR';
+    carriage_0: "INACTIVE" | "ACTIVE";
+    carriage_1: "INACTIVE" | "ACTIVE" | "COPY" | "MIRROR";
   }
 
   export interface VirtualSdcardState {
@@ -596,7 +605,7 @@ declare namespace Klipper {
   }
 
   export interface KalicoDockableProbeState {
-    last_status: 'UNKNOWN' | 'ATTACHED' | 'DOCKED';
+    last_status: "UNKNOWN" | "ATTACHED" | "DOCKED";
   }
 
   export interface KalicoMixingExtruderState {
@@ -773,21 +782,21 @@ declare namespace Klipper {
       multi_gear: boolean;
       environment_sensor?: string;
     };
-  }
+  };
 
   export interface MmuMachineState extends MmuMachineStateBaseType {
     num_units: number;
   }
 
   export type AfcStateState =
-    | 'Initialized'
-    | 'Idle'
-    | 'Error'
-    | 'Loading'
-    | 'Unloading'
-    | 'Ejecting'
-    | 'Moving'
-    | 'Restoring'
+    | "Initialized"
+    | "Idle"
+    | "Error"
+    | "Loading"
+    | "Unloading"
+    | "Ejecting"
+    | "Moving"
+    | "Restoring";
 
   export interface AfcState {
     current_load: string | null;
@@ -831,7 +840,7 @@ declare namespace Klipper {
     lanes: string[];
   }
 
-  export type AfcBufferStatus = 'Unknown' | 'Advancing' | 'Trailing'
+  export type AfcBufferStatus = "Unknown" | "Advancing" | "Trailing";
 
   export interface AfcBufferState {
     state: AfcBufferStatus;
@@ -840,16 +849,16 @@ declare namespace Klipper {
   }
 
   export type AfcLaneStatus =
-    | 'None'
-    | 'Error'
-    | 'Loaded'
-    | 'Tooled'
-    | 'Tool Loaded'
-    | 'Tool Loading'
-    | 'Tool Unloading'
-    | 'HUB Loading'
-    | 'Ejecting'
-    | 'Calibrating'
+    | "None"
+    | "Error"
+    | "Loaded"
+    | "Tooled"
+    | "Tool Loaded"
+    | "Tool Loading"
+    | "Tool Unloading"
+    | "HUB Loading"
+    | "Ejecting"
+    | "Calibrating";
 
   export interface AfcLaneState {
     name: string;
@@ -873,7 +882,7 @@ declare namespace Klipper {
     weight: number;
     extruder_temp: number | null;
     runout_lane: string | null;
-    filament_status: 'In Tool' | 'Ready' | 'Prep' | 'Not Ready';
+    filament_status: "In Tool" | "Ready" | "Prep" | "Not Ready";
     filament_status_led: string;
     status: AfcLaneStatus;
     dist_hub: number;
@@ -928,7 +937,7 @@ declare namespace Klipper {
       [key: `output_pin ${Lowercase<string>}`]: OutputPinSettings;
 
       [
-      key: `${'led' | 'neopixel' | 'dotstar' | 'pca9533' | 'pca9632'} ${Lowercase<string>}`
+        key: `${"led" | "neopixel" | "dotstar" | "pca9533" | "pca9632"} ${Lowercase<string>}`
       ]: LedSettings;
 
       [key: `temperature_sensor ${Lowercase<string>}`]: TemperatureSensorSettings;
@@ -1043,7 +1052,7 @@ declare namespace Klipper {
 
       [key: `afc_button ${Lowercase<string>}`]: AfcButtonSettings;
     }
-  >
+  >;
 
   export interface SettingsState extends SettingsStateBaseType {
     [key: string]: Record<string, any> | undefined;
@@ -1068,36 +1077,36 @@ declare namespace Klipper {
 
   type SensorTypesType = {
     common_thermistors:
-      | 'EPCOS 100K B57560G104F'
-      | 'ATC Semitec 104GT-2'
-      | 'ATC Semitec 104NT-4-R025H42G'
-      | 'Generic 3950'
-      | 'Honeywell 100K 135-104LAG-J01'
-      | 'NTC 100K MGB18-104F39050L32'
-      | 'SliceEngineering 450'
-      | 'TDK NTCG104LH104JT1';
+      | "EPCOS 100K B57560G104F"
+      | "ATC Semitec 104GT-2"
+      | "ATC Semitec 104NT-4-R025H42G"
+      | "Generic 3950"
+      | "Honeywell 100K 135-104LAG-J01"
+      | "NTC 100K MGB18-104F39050L32"
+      | "SliceEngineering 450"
+      | "TDK NTCG104LH104JT1";
     common_temperature_amplifiers:
-      | 'PT100 INA826'
-      | 'AD595'
-      | 'AD597'
-      | 'AD8494'
-      | 'AD8495'
-      | 'AD8496'
-      | 'AD8497';
-    pt100: 'PT1000';
-    maxxxxxx: 'MAX6675' | 'MAX31855' | 'MAX31856' | 'MAX31865';
-    bme280: 'BME280';
-    aht10: 'AHT10' | 'AHT1X' | 'AHT2X' | 'AHT3X';
-    htu21d: 'HTU21D' | 'SI7013' | 'SI7020' | 'SI7021' | 'SHT21';
-    sht3x: 'SHT3X';
-    lm75: 'LM75';
-    temperature_mcu: 'temperature_mcu';
-    temperature_host: 'temperature_host';
-    ds18b20: 'DS18B20';
-    temperature_combined: 'temperature_combined';
-  }
+      | "PT100 INA826"
+      | "AD595"
+      | "AD597"
+      | "AD8494"
+      | "AD8495"
+      | "AD8496"
+      | "AD8497";
+    pt100: "PT1000";
+    maxxxxxx: "MAX6675" | "MAX31855" | "MAX31856" | "MAX31865";
+    bme280: "BME280";
+    aht10: "AHT10" | "AHT1X" | "AHT2X" | "AHT3X";
+    htu21d: "HTU21D" | "SI7013" | "SI7020" | "SI7021" | "SHT21";
+    sht3x: "SHT3X";
+    lm75: "LM75";
+    temperature_mcu: "temperature_mcu";
+    temperature_host: "temperature_host";
+    ds18b20: "DS18B20";
+    temperature_combined: "temperature_combined";
+  };
 
-  export type SensorType = SensorTypesType[keyof SensorTypesType]
+  export type SensorType = SensorTypesType[keyof SensorTypesType];
 
   interface TemperatureSensorSettingsBase extends CommonSpiSettingsBase, CommonI2cSettingsBase {
     sensor_type: SensorType;
@@ -1114,7 +1123,7 @@ declare namespace Klipper {
     smooth_time: number;
     heater_pin: string;
     pwm_cycle_time: number;
-    control: 'watermark' | 'pid' | 'pid-v' | 'mpc';
+    control: "watermark" | "pid" | "pid-v" | "mpc";
     max_delta?: number;
     pid_kp?: number;
     pid_ki?: number;
@@ -1135,7 +1144,7 @@ declare namespace Klipper {
   export interface McuSettings {
     serial: string;
     baud?: number;
-    restart_method?: 'arduino' | 'cheetah' | 'rpi_usb' | 'command';
+    restart_method?: "arduino" | "cheetah" | "rpi_usb" | "command";
     max_stepper_error: number;
     is_non_critical?: boolean;
     reconnect_interval?: number;
@@ -1262,7 +1271,7 @@ declare namespace Klipper {
     mesh_min: [number, number];
     mesh_max: [number, number];
     mesh_pps: [number, number];
-    algorithm: 'lagrange' | 'bicubic';
+    algorithm: "lagrange" | "bicubic";
     bicubic_tension?: number;
     scan_overshoot?: 0;
     zero_reference_position: [number, number];
@@ -1308,7 +1317,7 @@ declare namespace Klipper {
   export interface ScrewsTiltAdjustSettings {
     [key: `screw${number}`]: [number, number] | undefined;
     [key: `screw${number}_name`]: string | undefined;
-    screw_thread: 'CW-M3' | 'CCW-M3' | 'CW-M4' | 'CCW-M4' | 'CW-M5' | 'CCW-M5' | 'CW-M8' | 'CCW-M8';
+    screw_thread: "CW-M3" | "CCW-M3" | "CW-M4" | "CCW-M4" | "CW-M5" | "CCW-M5" | "CW-M8" | "CCW-M8";
     horizontal_move_z: number;
     speed: number;
     adaptive_horizontal_move_z?: boolean;
@@ -1438,7 +1447,7 @@ declare namespace Klipper {
   }
 
   export interface ProbeEddyCurrentSettings extends CommonI2cSettingsBase {
-    sensor_type: 'ldc1612';
+    sensor_type: "ldc1612";
     reg_drive_current: number;
     x_offset: number;
     y_offset: number;
@@ -1452,7 +1461,7 @@ declare namespace Klipper {
     samples_tolerance_retries: number;
   }
 
-  export type InputShaperType = 'zv' | 'mzv' | 'zvd' | 'ei' | '2hump_ei' | '3hump_ei'
+  export type InputShaperType = "zv" | "mzv" | "zvd" | "ei" | "2hump_ei" | "3hump_ei";
 
   export interface InputShaperSettings {
     shaper_type: InputShaperType;
@@ -1465,20 +1474,20 @@ declare namespace Klipper {
   }
 
   export type PrinterKinematicsType =
-    | 'cartesian'
-    | 'delta'
-    | 'deltesian'
-    | 'corexy'
-    | 'corexz'
-    | 'hybrid_corexy'
-    | 'hybrid_corexz'
-    | 'polar'
-    | 'rotary_delta'
-    | 'winch'
-    | 'none'
-    | 'limited_cartesian'
-    | 'limited_corexy'
-    | 'limited_corexz'
+    | "cartesian"
+    | "delta"
+    | "deltesian"
+    | "corexy"
+    | "corexz"
+    | "hybrid_corexy"
+    | "hybrid_corexz"
+    | "polar"
+    | "rotary_delta"
+    | "winch"
+    | "none"
+    | "limited_cartesian"
+    | "limited_corexy"
+    | "limited_corexz";
 
   export interface PrinterSettings {
     kinematics: PrinterKinematicsType;
@@ -1546,10 +1555,10 @@ declare namespace Klipper {
   }
 
   export interface LoadCellSettings extends CommonSpiSettingsBase {
-    sensor_type: 'hx711' | 'hx717' | 'ads1220';
+    sensor_type: "hx711" | "hx717" | "ads1220";
     counts_per_gram?: number;
     reference_tare_counts?: number;
-    sensor_orientation: 'normal' | 'inverted';
+    sensor_orientation: "normal" | "inverted";
     dout_pin?: string;
     sclk_pin?: string;
     cs_pin?: string;

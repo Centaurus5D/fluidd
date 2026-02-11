@@ -428,6 +428,7 @@ app:
       tune: Calibrar
       wcs: Compensaciones WCS
       module5d: Módulo 5D
+      probe_offsets: Compensaciones de sonda
     tooltip:
       estop: Parada de Emergencia
       notifications: Notificaciones

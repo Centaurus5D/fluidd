@@ -475,6 +475,7 @@ app:
       beacon: Beacon探针
       wcs: WCS 偏移
       module5d: 5D模块
+      probe_offsets: 探头偏移
     tooltip:
       browse_metrics: 浏览可用指标
       estop: 紧急停止

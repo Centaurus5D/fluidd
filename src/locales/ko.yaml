@@ -423,6 +423,7 @@ app:
       rollover_logs: 롤오버 로그
       wcs: WCS 오프셋
       module5d: 5D 모듈
+      probe_offsets: 프로브 오프셋
     tooltip:
       estop: 비상 정지
       reload_klipper: Klipper 설정을 다시 불러 옵니다.

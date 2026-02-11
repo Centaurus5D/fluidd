@@ -20,6 +20,7 @@ export const defaultState = (): LayoutState => {
           { id: "camera-card", enabled: true, collapsed: false },
           { id: "toolhead-card", enabled: true, collapsed: false },
           { id: "module-5d-card", enabled: true, collapsed: false },
+
           { id: "macros-card", enabled: true, collapsed: false },
           { id: "outputs-card", enabled: true, collapsed: false },
           { id: "runout-sensors-card", enabled: false, collapsed: false },
@@ -34,6 +35,8 @@ export const defaultState = (): LayoutState => {
           { id: "job-queue-card", enabled: false, collapsed: false },
           { id: "gcode-preview-card", enabled: true, collapsed: false },
           { id: "bed-mesh-card", enabled: false, collapsed: false },
+          { id: "wcs-card", enabled: false, collapsed: false },
+          { id: "probe-card", enabled: false, collapsed: false },
           { id: "beacon-card", enabled: false, collapsed: false },
           { id: "afc-card", enabled: true, collapsed: false },
         ],

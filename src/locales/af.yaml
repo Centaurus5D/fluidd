@@ -433,6 +433,7 @@ app:
       tune: Stel in
       wcs: WCS-afsettings
       module5d: 5D-module
+      probe_offsets: Sonde verskuiwings
     tooltip:
       browse_metrics: Deursoek beskikbare maatstawwe
       estop: Noodstop

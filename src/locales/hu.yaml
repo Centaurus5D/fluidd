@@ -511,6 +511,7 @@ app:
       macro_category_settings: Makró kategória beállításai
       wcs: WCS eltolások
       module5d: 5D modul
+      probe_offsets: Szonda eltolások
     tooltip:
       browse_metrics: A böngészőben elérhető mutatók
       estop: VészSTOP

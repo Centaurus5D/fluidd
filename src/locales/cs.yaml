@@ -297,6 +297,7 @@ app:
       tune: Ladění
       wcs: Posuny WCS
       module5d: 5D modul
+      probe_offsets: Offsety sondy
     tooltip:
       estop: Nouzové zastavení
       reload_klipper: Obnoví konfiguraci klipperu.

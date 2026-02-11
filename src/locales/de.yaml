@@ -527,6 +527,7 @@ app:
       login: Anmeldung
       wcs: WCS-Offsets
       module5d: 5D-Modul
+      probe_offsets: Sondenversätze
     tooltip:
       browse_metrics: Verfügbare Metriken durchsuchen
       estop: Notaus

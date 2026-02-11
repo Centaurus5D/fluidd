@@ -393,6 +393,7 @@ app:
       tune: 調整
       wcs: WCS 偏移
       module5d: 5D模塊
+      probe_offsets: 探頭偏移
     tooltip:
       browse_metrics: 瀏覽可用指標
       estop: 緊急停止

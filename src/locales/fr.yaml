@@ -478,6 +478,7 @@ app:
       pending_configuration_changes: Attente de changements de configuration en cours
       wcs: Décalages WCS
       module5d: Module 5D
+      probe_offsets: Décalages de sonde
     tooltip:
       estop: Arrêt d'urgence
       reload_klipper: Recharge la configuration Klipper.

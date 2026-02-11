@@ -523,6 +523,7 @@ app:
       tune: Uglaševanje
       wcs: Odmiki WCS
       module5d: 5D modul
+      probe_offsets: Odmiki sonde
     tooltip:
       browse_metrics: Brskaj meritve, ki so na voljo
       estop: Zasilna ustavitev

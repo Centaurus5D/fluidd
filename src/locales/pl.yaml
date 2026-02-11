@@ -377,6 +377,7 @@ app:
       macro_category_settings: Ustawienia kategorii makr
       wcs: Odsunięcia GUW
       module5d: Moduł 5D
+      probe_offsets: Przesunięcia sondy
     msg:
       offline_ready: Fluidd jest teraz gotowy do pracy offline.
       needs_refresh: >-

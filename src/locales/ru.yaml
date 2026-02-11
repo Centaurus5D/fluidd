@@ -497,6 +497,7 @@ app:
       tune: Калибровка стола
       wcs: Смещения WCS
       module5d: 5D модуль
+      probe_offsets: Смещение датчика
     tooltip:
       browse_metrics: Просмотр доступных метрик
       estop: Аварийная остановка

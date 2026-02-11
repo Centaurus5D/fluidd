@@ -17,6 +17,7 @@ app:
     title:
       wcs: WCS Offsets
       module5d: 5D-modul
+      probe_offsets: Sondförskjutningar
     label:
       a_offset: En axelförskjutning A
   module_5d:
