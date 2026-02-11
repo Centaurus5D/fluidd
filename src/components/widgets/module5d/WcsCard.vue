@@ -11,7 +11,7 @@
       <app-btn
         small
         class="me-1 my-1"
-        :loading="hasWait($waits.onMeshCalibrate)"
+        :loading="hasWait($waits.onToolCalibrate)"
         :disabled="printerBusy || !allHomed"
         @click="() => (toolCalibrateDialogOpen = true)"
       >
@@ -65,7 +65,7 @@ export default class WcsCard extends Mixins(StateMixin, ToolheadMixin, BrowserMi
   readonly wcsChart!: WcsChart;
 
   calibrate(radius: number) {
-    this.sendGcode(`TOOL_CALIBRATE TOOL_RADIUS=${radius}`, this.$waits.onMeshCalibrate);
+    this.sendGcode(`TOOL_CALIBRATE TOOL_RADIUS=${radius}`, this.$waits.onToolCalibrate);
   }
 
   toolCalibrateDialogOpen = false;
