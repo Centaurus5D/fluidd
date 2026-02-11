@@ -632,6 +632,7 @@ export const Waits = Object.freeze({
   onRetract: "onRetract",
   onExtrude: "onExtrude",
   onMeshCalibrate: "onMeshCalibrate",
+  onToolCalibrate: "onToolCalibrate",
   onKlipperRestart: "klipperRestart",
   onKlipperFirmwareRestart: "klipperFirmwareRestart",
   onSetVelocity: "onSetVelocity",
