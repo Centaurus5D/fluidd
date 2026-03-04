@@ -23,24 +23,24 @@
 </template>
 
 <script lang="ts">
-import { Component, Mixins, VModel } from "vue-property-decorator";
-import StateMixin from "@/mixins/state";
-import ToolheadMixin from "@/mixins/toolhead";
+import { Component, Mixins, VModel } from 'vue-property-decorator'
+import StateMixin from '@/mixins/state'
+import ToolheadMixin from '@/mixins/toolhead'
 
 @Component({})
 export default class ToolCalibrateDialog extends Mixins(StateMixin, ToolheadMixin) {
   @VModel({ type: Boolean })
-  open?: boolean;
+  open?: boolean
 
-  mounted() {
-    this.radius = 3.0;
+  mounted () {
+    this.radius = 3.0
   }
 
-  radius = 0.0;
+  radius = 0.0
 
-  handleSubmit() {
-    this.$emit("calibrate", this.radius);
-    this.open = false;
+  handleSubmit () {
+    this.$emit('calibrate', this.radius)
+    this.open = false
   }
 }
 </script>
