@@ -1257,3 +1257,7 @@ app:
     label:
       tool_radius: Werkzeugradius
       tool_calibrate: Neues WCS kalibrieren
+    msg:
+      hint: >-
+        Es scheint, dass das Modul nicht kalibriert ist. Vergessen Sie nicht,
+        eine 5D-Modulkalibrierung durchzuführen

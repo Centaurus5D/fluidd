@@ -947,3 +947,7 @@ app:
     label:
       tool_radius: Gereedschapsradius
       tool_calibrate: Kalibreer nieuwe WCS
+    msg:
+      hint: >-
+        Het lijkt erop dat de module niet is gekalibreerd. Vergeet niet de
+        5D-module te kalibreren

@@ -5208,7 +5208,13 @@ export default class WcsChart extends Mixins(BrowserMixin) {
   }
 
   get wcsOffsets () {
-    return this.$typedState.printer.printer.module_5d?.wcs_offsets ?? []
+    return this.$typedState.printer.printer.module_5d?.wcs_offsets ?? [
+      [0.,0.,0.],
+      [0.,0.,0.],
+      [0.,0.,0.],
+      [0.,0.,0.],
+      [0.,0.,0.]
+    ]
   }
 
   get rows () {

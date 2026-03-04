@@ -761,3 +761,7 @@ app:
     label:
       tool_radius: Gereedskap radius
       tool_calibrate: Kalibreer nuwe WCS
+    msg:
+      hint: >-
+        Dit blyk dat module nie gekalibreer is nie, moenie vergeet om
+        5D-module-kalibrasie te maak nie

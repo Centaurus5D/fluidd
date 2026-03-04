@@ -483,3 +483,7 @@ app:
     label:
       tool_radius: Raggio dell'utensile
       tool_calibrate: Calibrare il nuovo WCS
+    msg:
+      hint: >-
+        Sembra che il modulo non sia calibrato, non dimenticare di effettuare la
+        calibrazione del modulo 5D

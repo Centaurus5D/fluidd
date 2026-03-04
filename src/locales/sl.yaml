@@ -1237,3 +1237,7 @@ app:
     label:
       tool_radius: Polmer orodja
       tool_calibrate: Umerite nov WCS
+    msg:
+      hint: >-
+        Zdi se, da modul ni kalibriran, ne pozabite narediti 5D kalibracije
+        modula

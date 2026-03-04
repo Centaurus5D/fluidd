@@ -445,3 +445,7 @@ app:
     label:
       tool_radius: Rádius nástroje
       tool_calibrate: Kalibrujte nové WCS
+    msg:
+      hint: >-
+        Zdá se, že modul není zkalibrován, nezapomeňte provést kalibraci 5D
+        modulu

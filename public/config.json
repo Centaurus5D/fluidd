@@ -197,11 +197,11 @@
       }
     },
     {
-      "name": "STEAPP",
+      "name": "Centaurus 5D",
       "color": "#0277bd",
       "isDark": false,
       "logo": {
-        "src": "logo_steapp.svg"
+        "src": "logo_centaurus.svg"
       }
     }
   ]

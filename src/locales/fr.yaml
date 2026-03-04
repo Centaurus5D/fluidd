@@ -1050,3 +1050,7 @@ app:
     label:
       tool_radius: Rayon d'outil
       tool_calibrate: Calibrer le nouveau WCS
+    msg:
+      hint: >-
+        Il semble que le module ne soit pas calibré, n'oubliez pas de faire le
+        calibrage du module 5D

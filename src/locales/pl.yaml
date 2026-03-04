@@ -1245,3 +1245,7 @@ app:
     label:
       tool_radius: Promień narzędzia
       tool_calibrate: Skalibruj nowy WCS
+    msg:
+      hint: >-
+        Wygląda na to, że moduł nie jest skalibrowany. Nie zapomnij wykonać
+        kalibracji modułu 5D

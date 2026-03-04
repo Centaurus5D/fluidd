@@ -709,3 +709,5 @@ app:
     label:
       tool_radius: 刀具半徑
       tool_calibrate: 校準新的 WCS
+    msg:
+      hint: 看來模組沒有校準，別忘了做5D模組校準

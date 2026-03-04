@@ -1090,3 +1090,7 @@ app:
     label:
       tool_radius: Szerszám sugara
       tool_calibrate: Kalibrálja az új WCS-t
+    msg:
+      hint: >-
+        Úgy tűnik, a modul nincs kalibrálva, ne felejtsd el elvégezni az 5D
+        modul kalibrálását

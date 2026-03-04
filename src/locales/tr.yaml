@@ -1207,3 +1207,7 @@ app:
     label:
       tool_radius: Takım yarıçapı
       tool_calibrate: Yeni WCS'yi kalibre edin
+    msg:
+      hint: >-
+        Modül kalibre edilmemiş görünüyor, 5D modül kalibrasyonunu yapmayı
+        unutmayın

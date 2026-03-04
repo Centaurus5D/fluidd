@@ -709,3 +709,7 @@ app:
     label:
       tool_radius: Raio da ferramenta
       tool_calibrate: Calibrar novo WCS
+    msg:
+      hint: >-
+        Parece que o módulo não está calibrado, não se esqueça de fazer a
+        calibração do módulo 5D

@@ -24,3 +24,7 @@ app:
     label:
       tool_radius: Verktygsradie
       tool_calibrate: Kalibrera nya WCS
+    msg:
+      hint: >-
+        Det verkar som om modulen inte är kalibrerad, glöm inte att göra
+        5D-modulkalibrering

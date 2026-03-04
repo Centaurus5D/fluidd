@@ -1073,3 +1073,5 @@ app:
     label:
       tool_radius: 刀具半径
       tool_calibrate: 校准新的 WCS
+    msg:
+      hint: 看来模块没有校准，别忘了做5D模块校准

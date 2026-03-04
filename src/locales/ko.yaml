@@ -828,3 +828,5 @@ app:
     label:
       tool_radius: 공구 반경
       tool_calibrate: 새로운 WCS 보정
+    msg:
+      hint: 모듈이 보정되지 않은 것 같습니다. 5D 모듈 보정을 수행하는 것을 잊지 마세요.

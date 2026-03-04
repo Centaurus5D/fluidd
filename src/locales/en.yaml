@@ -1307,3 +1307,7 @@ app:
     label:
       tool_radius: Tool radius
       tool_calibrate: Calibrate new WCS
+    msg:
+      hint: >-
+        It seems module not calibrated, don't forget to make 5D module
+        calibration
